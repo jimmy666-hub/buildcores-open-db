@@ -4,6 +4,16 @@
   "microarchitecture": "Zen 3",
   "coreFamily": "Cezanne",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +35,28 @@
     "l2": 3,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,14 +73,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 5600G",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000252BOX", "AMD Ryzen 5 5600G", "100100000252BOX"],
+    "part_numbers": [
+      "100-100000252BOX",
+      "AMD Ryzen 5 5600G",
+      "100100000252BOX"
+    ],
     "series": "Ryzen 5 5000",
     "variant": "5600G",
     "releaseYear": 2021

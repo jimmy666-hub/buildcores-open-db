@@ -4,6 +4,7 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Godavari",
   "socket": "FM2+",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,35 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "4cm x 4cm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "AES",
+    "CLFLUSH",
+    "CMOV",
+    "NX",
+    "AMD64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "NX bit/XD-bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +71,24 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A8 7670K OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD767KXBI44JC"],
+    "part_numbers": [
+      "AD767KXBI44JC"
+    ],
     "series": "A-Series A8 7000",
     "variant": "7670K",
     "releaseYear": 2015

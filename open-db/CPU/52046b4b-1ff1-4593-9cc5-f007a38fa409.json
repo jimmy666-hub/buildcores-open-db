@@ -4,6 +4,11 @@
   "microarchitecture": "Coffee Lake Refresh",
   "coreFamily": "Coffee Lake Refresh",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "B365",
+    "Z390",
+    "Q370"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +30,37 @@
     "l2": 2,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 127,
     "ppt": 0,
@@ -41,14 +77,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 9900KS",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80684I99900KS"],
+    "part_numbers": [
+      "BX80684I99900KS"
+    ],
     "series": "Core i9 9000",
     "variant": "9900KS",
     "releaseYear": 2019

@@ -4,6 +4,16 @@
   "microarchitecture": "Zen",
   "coreFamily": "Summit Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +35,33 @@
     "l2": 4,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16+1x4+1x4",
+      "2x8+1x4+1x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "SHA",
+    "FMA3",
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +78,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2667 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 7 1800X",
     "manufacturer": "AMD",
-    "part_numbers": ["YD180XBCAEMPK"],
+    "part_numbers": [
+      "YD180XBCAEMPK"
+    ],
     "series": "Ryzen 7 1000",
     "variant": "1800X",
     "releaseYear": 2017

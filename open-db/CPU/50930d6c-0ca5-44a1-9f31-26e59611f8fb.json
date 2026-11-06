@@ -4,6 +4,7 @@
   "microarchitecture": "Sandy Bridge",
   "coreFamily": "Sandy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,27 @@
     "l2": 1,
     "l3": 10
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 45.0 mm",
+  "tcaseMax": "64.0 °C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 130,
     "ppt": 0,
@@ -41,14 +63,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 375,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5 1620 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8062101038606"],
+    "part_numbers": [
+      "CM8062101038606"
+    ],
     "series": "Xeon E5 1600",
     "variant": "1620",
     "releaseYear": 2012

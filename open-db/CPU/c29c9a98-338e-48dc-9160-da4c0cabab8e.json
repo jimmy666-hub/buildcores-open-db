@@ -4,6 +4,7 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell",
   "socket": "LGA 1150",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,35 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "71.35°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit",
+    "Anti-Theft Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +71,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 4440S",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80646I54440S"],
+    "part_numbers": [
+      "BX80646I54440S"
+    ],
     "series": "Core i5 4000",
     "variant": "4440S",
     "releaseYear": 2013

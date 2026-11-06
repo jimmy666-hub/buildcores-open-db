@@ -4,6 +4,7 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [],
   "cores": {
     "total": 14,
     "performance": 0,
@@ -25,6 +26,28 @@
     "l2": 14,
     "l3": 19.25
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 44,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
     "ppt": 0,
@@ -41,14 +64,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [],
+      "unsupported": [
+        "ECC",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9-9940X OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CD8067304175600"],
+    "part_numbers": [
+      "CD8067304175600"
+    ],
     "series": "Core i9 9000",
     "variant": "9940X",
     "releaseYear": 2018

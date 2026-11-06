@@ -4,6 +4,15 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake-S WS",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +34,39 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": "69.3°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "AES-NI",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 83,
     "ppt": 0,
@@ -41,14 +83,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E-2274G OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8068404174407"],
+    "part_numbers": [
+      "CM8068404174407"
+    ],
     "series": "Xeon E 2200",
     "variant": "2274G",
     "releaseYear": 2019

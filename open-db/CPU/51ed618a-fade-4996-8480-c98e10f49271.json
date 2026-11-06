@@ -4,6 +4,7 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [],
   "cores": {
     "total": 18,
     "performance": 0,
@@ -25,6 +26,28 @@
     "l2": 18,
     "l3": 24.75
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
     "ppt": 0,
@@ -41,14 +64,24 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9-7980XE",
     "manufacturer": "Intel",
-    "part_numbers": ["CD8067303734902"],
+    "part_numbers": [
+      "CD8067303734902"
+    ],
     "series": "Core i9 7000",
     "variant": "7980XE",
     "releaseYear": 2017

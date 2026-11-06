@@ -4,25 +4,73 @@
   "microarchitecture": "Coffee Lake Refresh",
   "coreFamily": "Coffee Lake Refresh",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 8,
     "performance": 8,
+    "efficiency": null,
     "threads": 16
   },
   "clocks": {
     "performance": {
       "base": 3.4,
       "boost": 5
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 2,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "AES-NI",
+    "Secure Key"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 80,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "Intel HD Graphics P630"
+      "model": "Intel HD Graphics P630",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": true,
     "includesCooler": false,
@@ -31,16 +79,32 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E 2278G 3.4 GHz 8-Core LGA1151",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8068404225303"],
-    "series": "Intel Xeon E"
+    "part_numbers": [
+      "CM8068404225303"
+    ],
+    "series": "Intel Xeon E",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

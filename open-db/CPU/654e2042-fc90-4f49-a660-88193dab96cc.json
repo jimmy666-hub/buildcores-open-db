@@ -4,6 +4,7 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell Refresh",
   "socket": "LGA 1150",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,37 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8/2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Anti-Theft Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 84,
     "ppt": 0,
@@ -41,14 +73,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E3 1276 v3",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80646E31276V3"],
+    "part_numbers": [
+      "BX80646E31276V3"
+    ],
     "series": "Xeon E3 1200 v3",
     "variant": "1276 v3",
     "releaseYear": 2014

@@ -4,6 +4,14 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Richland",
   "socket": "FM2",
+  "supportedChipsets": [
+    "A88X",
+    "A85X",
+    "A78",
+    "A75",
+    "A68H",
+    "A55"
+  ],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +33,26 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +69,26 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A6-6420K",
     "manufacturer": "AMD",
-    "part_numbers": ["AD642KOKHLBOX"],
+    "part_numbers": [
+      "AD642KOKHLBOX"
+    ],
     "series": "A-Series A6 6000",
     "variant": "6420K",
     "releaseYear": 2014

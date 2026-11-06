@@ -4,6 +4,7 @@
   "microarchitecture": "Bulldozer",
   "coreFamily": "Zambezi",
   "socket": "AM3+",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,36 @@
     "l2": 6,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4a",
+    "AMD64",
+    "AES",
+    "AVX",
+    "CLMUL",
+    "CVT16",
+    "EVP",
+    "FMA4",
+    "XOP"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,19 +72,32 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR3-1866",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD FX-6120 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["FD6120WMW6KGU", "FX-6120"],
+    "part_numbers": [
+      "FD6120WMW6KGU",
+      "FX-6120"
+    ],
     "series": "FX 6000",
     "variant": "6120",
     "releaseYear": 2012
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

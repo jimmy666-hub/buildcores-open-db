@@ -4,6 +4,15 @@
   "microarchitecture": "Raptor Lake",
   "coreFamily": "Raptor Lake-S",
   "socket": "LGA 1700",
+  "supportedChipsets": [
+    "H610",
+    "B660",
+    "H670",
+    "Z690",
+    "B760",
+    "H770",
+    "Z790"
+  ],
   "cores": {
     "total": 16,
     "performance": 8,
@@ -25,6 +34,39 @@
     "l2": 24,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+4",
+      "2x8+4"
+    ]
+  },
+  "packageSize": "45.0 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT",
+    "VT-rp"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Control-flow Enforcement Technology",
+    "AES-NI",
+    "Secure Key",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Mode-based Execute Control (MBEC)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 35,
     "ppt": 106,
@@ -41,14 +83,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 192,
-      "types": ["DDR5", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR5",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-5600 / DDR4-3200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7-13700T",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8071504820903", "BX8071513700"],
+    "part_numbers": [
+      "CM8071504820903",
+      "BX8071513700"
+    ],
     "series": "Core i7 13000",
     "variant": "13700T",
     "releaseYear": 2023

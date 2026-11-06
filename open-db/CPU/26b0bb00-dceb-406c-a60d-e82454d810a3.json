@@ -4,6 +4,18 @@
   "microarchitecture": "Rocket Lake",
   "coreFamily": "Rocket Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [
+    "H510",
+    "B560",
+    "H570",
+    "Q570",
+    "W580",
+    "Z590",
+    "Q470",
+    "H470",
+    "W480",
+    "Z490"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +37,33 @@
     "l2": 3,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AVX-512",
+    "AES-NI",
+    "SSE4.2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Boot Guard",
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +80,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 11600",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070811600"],
+    "part_numbers": [
+      "BX8070811600"
+    ],
     "series": "Core i5 11000",
     "variant": "11600",
     "releaseYear": 2021

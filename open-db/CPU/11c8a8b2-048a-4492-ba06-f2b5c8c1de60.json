@@ -4,6 +4,15 @@
   "microarchitecture": "Alder Lake",
   "coreFamily": "Golden Cove",
   "socket": "LGA 1700",
+  "supportedChipsets": [
+    "H610",
+    "B660",
+    "H670",
+    "Z690",
+    "B760",
+    "H770",
+    "Z790"
+  ],
   "cores": {
     "total": 4,
     "performance": 4,
@@ -25,6 +34,36 @@
     "l2": 5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+4",
+      "2x8+4"
+    ]
+  },
+  "packageSize": "45.0 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Control-flow Enforcement Technology",
+    "AES-NI",
+    "Secure Key",
+    "Execute Disable Bit",
+    "Mode-based Execute Control (MBEC)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 58,
     "ppt": 89,
@@ -41,14 +80,30 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR5",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-4800 / DDR4-3200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i3 12100F",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8071512100F", "i3-12100F", "BX8071513100F"],
+    "part_numbers": [
+      "BX8071512100F",
+      "i3-12100F",
+      "BX8071513100F"
+    ],
     "series": "Core i3 12000",
     "variant": "12100F",
     "releaseYear": 2022

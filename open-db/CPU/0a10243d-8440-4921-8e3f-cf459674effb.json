@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 4",
   "coreFamily": "Raphael",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "B650",
+    "B650E",
+    "X670",
+    "X670E",
+    "B840",
+    "B850",
+    "X870",
+    "X870E"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +36,32 @@
     "l2": 8,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AVX-512",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Infinity Guard",
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,14 +78,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 192,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "5200 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD EPYC 4344P",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100001479WOF", "4344P"],
+    "part_numbers": [
+      "100-100001479WOF",
+      "4344P"
+    ],
     "series": "EPYC 4004",
     "variant": "4344P",
     "releaseYear": 2024

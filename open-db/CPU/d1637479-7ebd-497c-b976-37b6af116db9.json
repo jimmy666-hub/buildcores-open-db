@@ -4,25 +4,72 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Abu Dhabi",
   "socket": "G34",
+  "supportedChipsets": [
+    "AMD SR5650",
+    "AMD SR5670",
+    "AMD SR5690"
+  ],
   "cores": {
     "total": 8,
     "performance": 8,
+    "efficiency": null,
     "threads": 8
   },
   "clocks": {
     "performance": {
       "base": 3.2,
       "boost": 3.8
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 8,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "2.0",
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4a",
+    "AVX",
+    "AES",
+    "CLMUL",
+    "F16C",
+    "XOP",
+    "FMA4",
+    "AMD64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU"
+  ],
+  "security": [
+    "NX bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 115,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": false,
@@ -31,16 +78,31 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 0,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "ECC RDIMM"
+      ],
+      "unsupported": [
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Opteron 6328 3.2 GHz 8-Core G34",
     "manufacturer": "AMD",
-    "part_numbers": ["OS6328WKT8GHKWOF"],
-    "series": "AMD Opteron"
+    "part_numbers": [
+      "OS6328WKT8GHKWOF"
+    ],
+    "series": "AMD Opteron",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

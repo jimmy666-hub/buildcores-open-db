@@ -4,6 +4,16 @@
   "microarchitecture": "Zen",
   "coreFamily": "Summit Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +35,30 @@
     "l2": 3,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "40.0mm x 40.0mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "FMA3"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +75,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2667 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 1600",
     "manufacturer": "AMD",
-    "part_numbers": ["YD1600BBAEBOX"],
+    "part_numbers": [
+      "YD1600BBAEBOX"
+    ],
     "series": "Ryzen 5 1000",
     "variant": "1600",
     "releaseYear": 2017

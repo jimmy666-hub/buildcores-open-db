@@ -4,6 +4,15 @@
   "microarchitecture": "Zen 3",
   "coreFamily": "Vermeer",
   "socket": "AM4",
+  "supportedChipsets": [
+    "X570",
+    "X470",
+    "X370",
+    "B550",
+    "B450",
+    "B350",
+    "A520"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +34,40 @@
     "l2": 3,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AVX",
+    "AVX2",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,14 +84,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 5600XT",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100001585BOX", "10861342"],
+    "part_numbers": [
+      "100-100001585BOX",
+      "10861342"
+    ],
     "series": "Ryzen 5 5000",
     "variant": "5600XT",
     "releaseYear": 2024

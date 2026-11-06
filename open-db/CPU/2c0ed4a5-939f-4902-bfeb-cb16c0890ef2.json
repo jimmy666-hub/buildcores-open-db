@@ -4,6 +4,16 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Matisse",
   "socket": "AM4",
+  "supportedChipsets": [
+    "X570",
+    "X470",
+    "X370",
+    "B450",
+    "A320",
+    "B350",
+    "A520",
+    "B550"
+  ],
   "cores": {
     "total": 16,
     "performance": 0,
@@ -25,6 +35,34 @@
     "l2": 8,
     "l3": 64
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86-64",
+    "AVX2",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor",
+    "PCIe DMA Security",
+    "USB DMA Security",
+    "AMD Enhanced Virus Protection (NX bit)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 105,
     "ppt": 142,
@@ -41,14 +79,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 9 3950X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000051WOF", "AMD Ryzen 9 3950X"],
+    "part_numbers": [
+      "100-100000051WOF",
+      "AMD Ryzen 9 3950X"
+    ],
     "series": "Ryzen 9 3000",
     "variant": "3950X",
     "releaseYear": 2019

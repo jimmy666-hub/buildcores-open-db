@@ -4,25 +4,57 @@
   "microarchitecture": "Sandy Bridge",
   "coreFamily": "Sandy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 6,
+    "efficiency": null,
     "threads": 12
   },
   "clocks": {
     "performance": {
       "base": 3.3,
       "boost": 3.9
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 5,
     "l3": 15
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 45.0 mm",
+  "tcaseMax": "64°C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 130,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": true,
     "includesCooler": false,
@@ -31,16 +63,31 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 0,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "ECC RDIMM"
+      ],
+      "unsupported": [
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-1660 3.3 GHz 6-Core LGA2011",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80621E51660"],
-    "series": "Intel Xeon E5"
+    "part_numbers": [
+      "BX80621E51660"
+    ],
+    "series": "Intel Xeon E5",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

@@ -4,6 +4,18 @@
   "microarchitecture": "Rocket Lake",
   "coreFamily": "Rocket Lake-S",
   "socket": "LGA 1200",
+  "supportedChipsets": [
+    "H510",
+    "B560",
+    "H570",
+    "Q570",
+    "W580",
+    "Z590",
+    "Q470",
+    "H470",
+    "W480",
+    "Z490"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +37,36 @@
     "l2": 3,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+1x4",
+      "2x8+1x4",
+      "1x8+3x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit",
+    "Boot Guard"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +83,30 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 11400F",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070811400F", "BX8070811400", "BXC8070811400F", "BX8070110400F"],
+    "part_numbers": [
+      "BX8070811400F",
+      "BX8070811400",
+      "BXC8070811400F",
+      "BX8070110400F"
+    ],
     "series": "Core i5 11000",
     "variant": "11400F",
     "releaseYear": 2021

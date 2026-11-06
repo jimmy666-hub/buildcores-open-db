@@ -4,6 +4,9 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "X299"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +28,28 @@
     "l2": 8,
     "l3": 16.5
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
     "ppt": 0,
@@ -41,14 +66,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7-9800X",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80673I79800X"],
+    "part_numbers": [
+      "BX80673I79800X"
+    ],
     "series": "Core i7 X-series",
     "variant": "9800X",
     "releaseYear": 2018

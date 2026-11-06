@@ -2,40 +2,97 @@
   "opendb_id": "6e7ac885-2f58-4ad7-afb9-0b9ec6013701",
   "series": "Ryzen PRO 5000",
   "microarchitecture": "Zen 3",
+  "coreFamily": null,
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 6,
+    "performance": null,
+    "efficiency": null,
     "threads": 12
   },
   "clocks": {
     "performance": {
       "base": 3.9,
       "boost": 4.4
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 3,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
+    "ppt": null,
     "integratedGraphics": {
       "model": "Radeon Graphics",
       "baseClock": 1900,
+      "boostClock": null,
       "shaderCount": 7
     },
     "eccSupport": false,
     "includesCooler": false,
+    "packaging": null,
     "lithography": "TSMC 7nm FinFET",
     "simultaneousMultithreading": true,
     "memory": {
-      "types": ["DDR4"],
-      "channels": 2
+      "maxSupport": null,
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Pro 5655G",
     "manufacturer": "AMD",
+    "part_numbers": [],
     "series": "Ryzen Pro 5000",
     "variant": "5655G",
     "releaseYear": 2024

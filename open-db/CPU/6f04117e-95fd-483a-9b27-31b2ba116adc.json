@@ -4,25 +4,60 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "Intel X299"
+  ],
   "cores": {
     "total": 12,
     "performance": 12,
+    "efficiency": null,
     "threads": 24
   },
   "clocks": {
     "performance": {
       "base": 3.5,
       "boost": 4.4
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 12,
     "l3": 25
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 44,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": false,
@@ -31,16 +66,30 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 9920X 3.5 GHz 12-Core LGA2066",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80673I99920X"],
-    "series": "Intel Core i9"
+    "part_numbers": [
+      "BX80673I99920X"
+    ],
+    "series": "Intel Core i9",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

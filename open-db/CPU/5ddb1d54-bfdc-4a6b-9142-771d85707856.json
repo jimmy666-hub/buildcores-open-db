@@ -4,6 +4,9 @@
   "microarchitecture": "Zen",
   "coreFamily": "Whitehaven",
   "socket": "sTR4",
+  "supportedChipsets": [
+    "X399"
+  ],
   "cores": {
     "total": 12,
     "performance": 0,
@@ -25,6 +28,31 @@
     "l2": 6,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 64,
+    "cpuConfigurations": [
+      "1x16",
+      "2x16",
+      "4x16"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "FMA3",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 180,
     "ppt": 0,
@@ -41,14 +69,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2667 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper 1920X",
     "manufacturer": "AMD",
-    "part_numbers": ["YD192XA8AEWOF"],
+    "part_numbers": [
+      "YD192XA8AEWOF"
+    ],
     "series": "Ryzen Threadripper 1000",
     "variant": "1920X",
     "releaseYear": 2017

@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 4",
   "coreFamily": "Raphael",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "X670E",
+    "X670",
+    "B650E",
+    "B650",
+    "X870E",
+    "X870",
+    "B840",
+    "B850"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +36,41 @@
     "l2": 6,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AVX",
+    "AVX2",
+    "AVX512",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 105,
     "ppt": 142,
@@ -41,14 +87,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-5200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 7600X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000593WOF", "RYZEN 5 7600X", "100100000593WOF"],
+    "part_numbers": [
+      "100-100000593WOF",
+      "RYZEN 5 7600X",
+      "100100000593WOF"
+    ],
     "series": "Ryzen 5 7000",
     "variant": "7600X",
     "releaseYear": 2022

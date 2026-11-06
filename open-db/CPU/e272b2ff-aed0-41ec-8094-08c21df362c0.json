@@ -4,6 +4,7 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Richland",
   "socket": "FM2",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD Virtualization",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "EVP (Enhanced Virus Protection)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 100,
     "ppt": 0,
@@ -41,14 +62,25 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A10-6790K OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD679KWOA44HL"],
+    "part_numbers": [
+      "AD679KWOA44HL"
+    ],
     "series": "A-Series A10 6000",
     "variant": "6790K",
     "releaseYear": 2013

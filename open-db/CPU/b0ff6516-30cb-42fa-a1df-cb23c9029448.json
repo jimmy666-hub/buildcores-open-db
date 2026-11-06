@@ -4,6 +4,7 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell",
   "socket": "LGA 1150",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,29 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "71.35°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +65,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 4790S",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80646I74790S"],
+    "part_numbers": [
+      "BX80646I74790S"
+    ],
     "series": "Core i7 4000",
     "variant": "4790S",
     "releaseYear": 2014

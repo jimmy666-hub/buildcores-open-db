@@ -4,6 +4,7 @@
   "microarchitecture": "Excavator",
   "coreFamily": "Carrizo",
   "socket": "FM2+",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 2,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": "74°C",
+  "instructionSets": [
+    "SSE 4.2",
+    "SSE 4.1",
+    "AVX",
+    "AVX2",
+    "AES",
+    "FMA3",
+    "F16C",
+    "MMX"
+  ],
+  "virtualization": [],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 45,
     "ppt": 0,
@@ -41,19 +62,32 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A8-7680",
     "manufacturer": "AMD",
-    "part_numbers": ["AD7680ACABBOX"],
+    "part_numbers": [
+      "AD7680ACABBOX"
+    ],
     "series": "A-Series A8 7000",
     "variant": "7680",
     "releaseYear": 2018
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

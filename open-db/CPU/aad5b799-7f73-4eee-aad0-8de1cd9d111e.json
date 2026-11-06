@@ -4,6 +4,13 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Kaveri",
   "socket": "FM2+",
+  "supportedChipsets": [
+    "A88X",
+    "A85X",
+    "A78",
+    "A75",
+    "A68H"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +32,27 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "FMA4",
+    "AVX",
+    "AES",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +69,24 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A10-7800",
     "manufacturer": "AMD",
-    "part_numbers": ["AD7800YBJABOX"],
+    "part_numbers": [
+      "AD7800YBJABOX"
+    ],
     "series": "A-Series A10 7000",
     "variant": "7800",
     "releaseYear": 2014

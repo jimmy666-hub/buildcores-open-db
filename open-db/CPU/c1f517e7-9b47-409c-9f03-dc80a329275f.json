@@ -4,6 +4,7 @@
   "microarchitecture": "Excavator",
   "coreFamily": "Carrizo",
   "socket": "FM2+",
+  "supportedChipsets": [],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +26,37 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "40mm x 40mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "AVX2",
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "AES-NI",
+    "FMA3",
+    "F16C",
+    "BMI1",
+    "BMI2",
+    "TBM",
+    "XOP",
+    "FMA4"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 45,
     "ppt": 0,
@@ -41,14 +73,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A6-7480",
     "manufacturer": "AMD",
-    "part_numbers": ["AD7480ACABBOX"],
+    "part_numbers": [
+      "AD7480ACABBOX"
+    ],
     "series": "A-Series A6 7000",
     "variant": "7480",
     "releaseYear": 2018

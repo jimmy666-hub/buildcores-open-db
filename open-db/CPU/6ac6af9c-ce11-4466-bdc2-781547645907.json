@@ -4,6 +4,13 @@
   "microarchitecture": "Arrow Lake",
   "coreFamily": "Lion Cove / Skymont",
   "socket": "LGA 1851",
+  "supportedChipsets": [
+    "Z890",
+    "B860",
+    "W880",
+    "Q870",
+    "H810"
+  ],
   "cores": {
     "total": 14,
     "performance": 6,
@@ -25,6 +32,39 @@
     "l2": 26,
     "l3": 24
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16+2x4",
+      "2x8+2x4",
+      "1x8+4x4"
+    ]
+  },
+  "packageSize": "45 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "Secure Key",
+    "Control-Flow Enforcement Technology",
+    "Trusted Execution Technology",
+    "OS Guard",
+    "Execute Disable Bit",
+    "Mode-based Execute Control (MBEC)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 159,
@@ -41,14 +81,28 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "6400 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core Ultra 5 245KF",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80768245KF", "Intel Core Ultra 5 245KF"],
+    "part_numbers": [
+      "BX80768245KF",
+      "Intel Core Ultra 5 245KF"
+    ],
     "series": "Core Ultra 5 200",
     "variant": "245KF",
     "releaseYear": 2024

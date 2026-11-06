@@ -4,6 +4,15 @@
   "microarchitecture": "Zen 3",
   "coreFamily": "Vermeer",
   "socket": "AM4",
+  "supportedChipsets": [
+    "X570",
+    "X470",
+    "X370",
+    "B550",
+    "B450",
+    "B350",
+    "A520"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +34,42 @@
     "l2": 3,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AMD-V",
+    "AVX",
+    "AVX2",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +86,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 5600T",
     "manufacturer": "AMD",
-    "part_numbers": ["100-000001584BOX", "5600T", "100-100001584BOX"],
+    "part_numbers": [
+      "100-000001584BOX",
+      "5600T",
+      "100-100001584BOX"
+    ],
     "series": "Ryzen 5 5000",
     "variant": "5600T",
     "releaseYear": 2024

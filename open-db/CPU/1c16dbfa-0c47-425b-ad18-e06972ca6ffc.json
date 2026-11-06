@@ -4,6 +4,11 @@
   "microarchitecture": "Excavator",
   "coreFamily": "Bristol Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +30,27 @@
     "l2": 2,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 8,
+    "cpuConfigurations": [
+      "1x8"
+    ]
+  },
+  "packageSize": "40.0mm x 40.0mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "AES",
+    "FMA4"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +67,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A12-9800",
     "manufacturer": "AMD",
-    "part_numbers": ["AD9800AUABBOX"],
+    "part_numbers": [
+      "AD9800AUABBOX"
+    ],
     "series": "A-Series A12 9000",
     "variant": "9800",
     "releaseYear": 2017

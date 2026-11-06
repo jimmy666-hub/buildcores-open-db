@@ -4,6 +4,7 @@
   "microarchitecture": "Comet Lake",
   "coreFamily": "Comet Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [],
   "cores": {
     "total": 10,
     "performance": 0,
@@ -25,6 +26,32 @@
     "l2": 2.5,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Secure Key",
+    "SGX"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 0,
@@ -41,14 +68,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2933 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9-10850K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070110850KA"],
+    "part_numbers": [
+      "BX8070110850KA"
+    ],
     "series": "Core i9 10000",
     "variant": "10850K",
     "releaseYear": 2020

@@ -4,6 +4,7 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Kaveri",
   "socket": "FM2+",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,29 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "FMA3",
+    "FMA4",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +65,26 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A10-7700K",
     "manufacturer": "AMD",
-    "part_numbers": ["AD770KXBJABOX"],
+    "part_numbers": [
+      "AD770KXBJABOX"
+    ],
     "series": "A10 7000",
     "variant": "7700K",
     "releaseYear": 2014

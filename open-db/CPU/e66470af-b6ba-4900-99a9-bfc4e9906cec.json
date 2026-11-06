@@ -4,25 +4,66 @@
   "microarchitecture": "Broadwell",
   "coreFamily": "Broadwell-EP",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "X99",
+    "C612"
+  ],
   "cores": {
     "total": 4,
     "performance": 4,
+    "efficiency": null,
     "threads": 8
   },
   "clocks": {
     "performance": {
       "base": 3.5,
       "boost": 3.8
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 1,
     "l3": 10
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "45mm x 52.5mm",
+  "tcaseMax": "69°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "TXT",
+    "AES-NI",
+    "OS Guard",
+    "Secure Key"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 140,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": true,
     "includesCooler": false,
@@ -31,16 +72,30 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 1536,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5 1620 V4 3.5 GHz 4-Core LGA2011-3",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80660E51620V4"],
-    "series": "Intel Xeon E5"
+    "part_numbers": [
+      "BX80660E51620V4"
+    ],
+    "series": "Intel Xeon E5",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

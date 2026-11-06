@@ -4,6 +4,16 @@
   "microarchitecture": "Zen",
   "coreFamily": "Summit Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +35,33 @@
     "l2": 4,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "AVX2",
+    "AES-NI",
+    "FMA3",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD GuardMI Technology",
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +78,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2667 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 7 1700 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["YD1700BBM88AE"],
+    "part_numbers": [
+      "YD1700BBM88AE"
+    ],
     "series": "Ryzen 7 1000",
     "variant": "1700",
     "releaseYear": 2017

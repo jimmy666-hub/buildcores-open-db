@@ -4,6 +4,18 @@
   "microarchitecture": "Comet Lake",
   "coreFamily": "Comet Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [
+    "Z590",
+    "H570",
+    "B560",
+    "H510",
+    "Z490",
+    "H470",
+    "B460",
+    "H410",
+    "W480",
+    "Q470"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +37,37 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "SGX with Intel ME"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 0,
@@ -41,14 +84,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 10600K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070110600KA"],
+    "part_numbers": [
+      "BX8070110600KA"
+    ],
     "series": "Core i5 10000",
     "variant": "10600K",
     "releaseYear": 2020

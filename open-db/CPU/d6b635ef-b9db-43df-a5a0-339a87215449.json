@@ -4,6 +4,7 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Godavari",
   "socket": "FM2+",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": []
+  },
+  "packageSize": "40mm x 40mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "EVP"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +62,28 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A10-7890K OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD789KXDJCHBX", "e6fengyux2942"],
+    "part_numbers": [
+      "AD789KXDJCHBX",
+      "e6fengyux2942"
+    ],
     "series": "A-Series A10 7000",
     "variant": "7890K",
     "releaseYear": 2016

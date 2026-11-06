@@ -4,6 +4,7 @@
   "microarchitecture": "Bulldozer",
   "coreFamily": "Zambezi",
   "socket": "AM3+",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,22 @@
     "l2": 8,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "2.0",
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86-64",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +58,26 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR3-1866",
+      "eccModes": [
+        "ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD FX 8140 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["FD8140WMW8KGU"],
+    "part_numbers": [
+      "FD8140WMW8KGU"
+    ],
     "series": "FX 8000",
     "variant": "8140",
     "releaseYear": 2012

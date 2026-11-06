@@ -4,6 +4,9 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "Intel X299"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +28,28 @@
     "l2": 8,
     "l3": 11
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 140,
     "ppt": 0,
@@ -41,14 +66,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 7820X",
     "manufacturer": "Intel",
-    "part_numbers": ["CD8067303611000"],
+    "part_numbers": [
+      "CD8067303611000"
+    ],
     "series": "Core i7 7000",
     "variant": "7820X",
     "releaseYear": 20117

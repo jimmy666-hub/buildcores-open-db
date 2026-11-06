@@ -4,6 +4,16 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Matisse",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +35,30 @@
     "l2": 2,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,14 +75,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 3 3300X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000159BOX"],
+    "part_numbers": [
+      "100-100000159BOX"
+    ],
     "series": "Ryzen 3 3000",
     "variant": "3300X",
     "releaseYear": 2020

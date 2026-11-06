@@ -4,6 +4,9 @@
   "microarchitecture": "Zen+",
   "coreFamily": "Colfax",
   "socket": "sTR4",
+  "supportedChipsets": [
+    "X399"
+  ],
   "cores": {
     "total": 16,
     "performance": 0,
@@ -25,6 +28,30 @@
     "l2": 8,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 64,
+    "cpuConfigurations": [
+      "1x16",
+      "2x16",
+      "4x16"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 180,
     "ppt": 0,
@@ -41,14 +68,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 2048,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2933 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper 2950X",
     "manufacturer": "AMD",
-    "part_numbers": ["YD295XA8AFWOF"],
+    "part_numbers": [
+      "YD295XA8AFWOF"
+    ],
     "series": "Ryzen Threadripper 2000",
     "variant": "2950X",
     "releaseYear": 2018

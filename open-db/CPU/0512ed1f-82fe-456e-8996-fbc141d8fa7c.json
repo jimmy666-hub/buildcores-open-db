@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge E",
   "coreFamily": "Ivy Bridge-E",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,39 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "1x16",
+      "2x16",
+      "1x8",
+      "2x8",
+      "4x8"
+    ]
+  },
+  "packageSize": "52.5mm x 45.0mm",
+  "tcaseMax": "66.8°C",
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 130,
     "ppt": 0,
@@ -41,14 +75,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 4930K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80633I74930K"],
+    "part_numbers": [
+      "BX80633I74930K"
+    ],
     "series": "Core i7 4000",
     "variant": "4930K",
     "releaseYear": 2013

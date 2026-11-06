@@ -4,6 +4,13 @@
   "microarchitecture": "Arrow Lake",
   "coreFamily": "Arrow Lake-S",
   "socket": "LGA 1851",
+  "supportedChipsets": [
+    "Z890",
+    "B860",
+    "W880",
+    "Q870",
+    "H810"
+  ],
   "cores": {
     "total": 20,
     "performance": 8,
@@ -25,6 +32,33 @@
     "l2": 36,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": "5.0 and 4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16+2x4",
+      "2x8+2x4",
+      "1x8+4x4"
+    ]
+  },
+  "packageSize": "45 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Execute Disable Bit",
+    "Intel Threat Detection Technology (TDT)",
+    "Intel Standard Manageability (ISM)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 182,
@@ -41,14 +75,26 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "6400 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core Ultra 7 265F",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80768265F", "BX80768265F dup"],
+    "part_numbers": [
+      "BX80768265F",
+      "BX80768265F dup"
+    ],
     "series": "Core Ultra 7 200",
     "variant": "265F",
     "releaseYear": 2025

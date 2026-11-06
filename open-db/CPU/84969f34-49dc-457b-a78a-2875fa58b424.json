@@ -4,6 +4,16 @@
   "microarchitecture": "Excavator",
   "coreFamily": "Bristol Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +35,27 @@
     "l2": 2,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 8,
+    "cpuConfigurations": [
+      "1x8"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "AES",
+    "FMA4"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "AMD Secure Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +72,28 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A8-9600",
     "manufacturer": "AMD",
-    "part_numbers": ["AD9600AGABBOX", "114951"],
+    "part_numbers": [
+      "AD9600AGABBOX",
+      "114951"
+    ],
     "series": "A-Series A8 9000",
     "variant": "9600",
     "releaseYear": 2016

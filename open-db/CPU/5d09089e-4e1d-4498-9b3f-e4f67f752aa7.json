@@ -4,6 +4,10 @@
   "microarchitecture": "Broadwell E",
   "coreFamily": "Broadwell-E",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "X99",
+    "C612"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +29,32 @@
     "l2": 1.5,
     "l3": 15
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x16",
+      "1x16+2x8",
+      "4x8"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": "67.2°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 140,
     "ppt": 0,
@@ -41,14 +71,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 6800K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80671I76800K"],
+    "part_numbers": [
+      "BX80671I76800K"
+    ],
     "series": "Core i7 6000",
     "variant": "6800K",
     "releaseYear": 2016

@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 5",
   "coreFamily": "Granite Ridge",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "X670E",
+    "X670",
+    "B650E",
+    "B650",
+    "X870E",
+    "X870",
+    "B840",
+    "B850"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +36,28 @@
     "l2": 8,
     "l3": 96
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 120,
     "ppt": 162,
@@ -41,8 +74,19 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "5600 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {

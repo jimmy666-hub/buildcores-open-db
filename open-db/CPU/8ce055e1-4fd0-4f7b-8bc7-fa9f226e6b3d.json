@@ -4,6 +4,10 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell-EP",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "X99",
+    "C612"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +29,34 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 45.0 mm",
+  "tcaseMax": "66.26°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "TXT",
+    "AES-NI",
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 140,
     "ppt": 0,
@@ -41,14 +73,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5 1680 V3 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8064401547809"],
+    "part_numbers": [
+      "CM8064401547809"
+    ],
     "series": "Xeon E5 1600 v3",
     "variant": "1680 v3",
     "releaseYear": 2014

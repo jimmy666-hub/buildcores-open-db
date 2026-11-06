@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge",
   "coreFamily": "Ivy Bridge",
   "socket": "LGA 1155",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,38 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": null,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8 & 2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "69.8°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "AES-NI",
+    "Intel 64"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Secure Key",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Anti-Theft Technology",
+    "Identity Protection Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 45,
     "ppt": 0,
@@ -41,14 +74,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 3770T OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8063701212200"],
+    "part_numbers": [
+      "CM8063701212200"
+    ],
     "series": "Core i7 3000",
     "variant": "3770T",
     "releaseYear": 2012

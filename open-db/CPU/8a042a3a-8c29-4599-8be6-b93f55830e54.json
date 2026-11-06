@@ -4,6 +4,17 @@
   "microarchitecture": "Raptor Lake Refresh",
   "coreFamily": "Raptor Cove / Gracemont",
   "socket": "LGA 1700",
+  "supportedChipsets": [
+    "H610",
+    "B660",
+    "H670",
+    "Q670",
+    "Z690",
+    "W680",
+    "B760",
+    "H770",
+    "Z790"
+  ],
   "cores": {
     "total": 16,
     "performance": 8,
@@ -25,6 +36,37 @@
     "l2": 24,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+4",
+      "2x8+4"
+    ]
+  },
+  "packageSize": "45.0mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Control-flow Enforcement Technology",
+    "Secure Key",
+    "Mode-based Execute Control (MBEC)",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 253,
@@ -41,14 +83,30 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 192,
-      "types": ["DDR5", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR5",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-5600 / DDR4-3200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 13700KF",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8071513700KF", "Lago Raptor 13700", "i7-13700KF"],
+    "part_numbers": [
+      "BX8071513700KF",
+      "Lago Raptor 13700",
+      "i7-13700KF"
+    ],
     "series": "Core i7 13000",
     "variant": "13700KF",
     "releaseYear": 2022

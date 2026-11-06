@@ -4,6 +4,15 @@
   "microarchitecture": "Alder Lake",
   "coreFamily": "Alder Lake-S",
   "socket": "LGA 1700",
+  "supportedChipsets": [
+    "H610",
+    "B660",
+    "H670",
+    "Z690",
+    "B760",
+    "H770",
+    "Z790"
+  ],
   "cores": {
     "total": 16,
     "performance": 8,
@@ -25,6 +34,38 @@
     "l2": 14,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+4",
+      "2x8+4"
+    ]
+  },
+  "packageSize": "45.0 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-rp"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Control-Flow Enforcement Technology",
+    "AES-NI",
+    "Secure Key",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Mode-based Execute Control (MBEC)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 202,
@@ -41,14 +82,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR5",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-4800 / DDR4-3200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 12900",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8071512900"],
+    "part_numbers": [
+      "BX8071512900"
+    ],
     "series": "Core i9 12000",
     "variant": "12900",
     "releaseYear": 2022

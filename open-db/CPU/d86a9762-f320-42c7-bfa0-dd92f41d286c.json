@@ -4,6 +4,16 @@
   "microarchitecture": "Zen",
   "coreFamily": "Summit Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +35,31 @@
     "l2": 2,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16"
+    ]
+  },
+  "packageSize": "40 mm × 40 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "FMA3",
+    "AES-NI",
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +76,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2667 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 3 1200 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["YD1200BBM4KAF"],
+    "part_numbers": [
+      "YD1200BBM4KAF"
+    ],
     "series": "Ryzen 3 1000",
     "variant": "1200",
     "releaseYear": 2017

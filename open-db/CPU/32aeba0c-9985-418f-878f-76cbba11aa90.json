@@ -4,6 +4,9 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Castle Peak",
   "socket": "sTRX4",
+  "supportedChipsets": [
+    "TRX40"
+  ],
   "cores": {
     "total": 24,
     "performance": 0,
@@ -25,6 +28,27 @@
     "l2": 12,
     "l3": 128
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 88,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "FMA3",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "SVM"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 280,
     "ppt": 0,
@@ -41,14 +65,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper 3960X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000010WOF"],
+    "part_numbers": [
+      "100-100000010WOF"
+    ],
     "series": "Ryzen Threadripper 3000",
     "variant": "3960X",
     "releaseYear": 2019

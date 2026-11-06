@@ -4,6 +4,16 @@
   "microarchitecture": "Zen",
   "coreFamily": "Picasso",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +35,33 @@
     "l2": 1,
     "l3": 4
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "FMA3",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "SVM"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 35,
     "ppt": 0,
@@ -41,14 +78,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2667 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Athlon 3000G",
     "manufacturer": "AMD",
-    "part_numbers": ["YD3000C6FHBOX", "YD220GC6FBBOX"],
+    "part_numbers": [
+      "YD3000C6FHBOX",
+      "YD220GC6FBBOX"
+    ],
     "series": "Athlon 3000",
     "variant": "3000G",
     "releaseYear": 2019

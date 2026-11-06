@@ -4,6 +4,15 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Renoir",
   "socket": "AM4",
+  "supportedChipsets": [
+    "X570",
+    "X470",
+    "B550",
+    "B450",
+    "B350",
+    "A520",
+    "A320"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +34,40 @@
     "l2": 2,
     "l3": 4
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AVX",
+    "AVX2",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +84,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 3 4100",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000510BOX", "AMD Ryzen 3 4100"],
+    "part_numbers": [
+      "100-100000510BOX",
+      "AMD Ryzen 3 4100"
+    ],
     "series": "Ryzen 3 4000",
     "variant": "4100",
     "releaseYear": 2022

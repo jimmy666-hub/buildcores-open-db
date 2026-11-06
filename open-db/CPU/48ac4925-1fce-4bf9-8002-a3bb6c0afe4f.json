@@ -4,6 +4,7 @@
   "microarchitecture": "Comet Lake",
   "coreFamily": "Comet Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,34 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Secure Key",
+    "SGX",
+    "OS Guard",
+    "TXT",
+    "Execute Disable Bit",
+    "Boot Guard",
+    "SIPP"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +70,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 10500 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070110500", "4807120"],
+    "part_numbers": [
+      "BX8070110500",
+      "4807120"
+    ],
     "series": "Core i5 10000",
     "variant": "10500",
     "releaseYear": 2020

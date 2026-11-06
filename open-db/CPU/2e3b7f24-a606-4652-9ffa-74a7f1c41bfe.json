@@ -4,6 +4,7 @@
   "microarchitecture": "Comet Lake",
   "coreFamily": "Comet Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,32 @@
     "l2": 2,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8",
+      "1x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Intel Boot Guard"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 224,
@@ -41,14 +68,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2933 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 10700F",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070110700F"],
+    "part_numbers": [
+      "BX8070110700F"
+    ],
     "series": "Core i7 10000",
     "variant": "10700F",
     "releaseYear": 2020

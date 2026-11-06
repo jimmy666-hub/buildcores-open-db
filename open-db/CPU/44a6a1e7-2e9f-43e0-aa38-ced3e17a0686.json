@@ -4,6 +4,13 @@
   "microarchitecture": "Comet Lake",
   "coreFamily": "Comet Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [
+    "Intel W580",
+    "Intel Q570",
+    "Intel Z590",
+    "Intel H510",
+    "Intel 400 Series Desktop Chipsets"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +32,31 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Intel Boot Guard"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 0,
@@ -41,14 +73,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 10600KF",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070110600KF"],
+    "part_numbers": [
+      "BX8070110600KF"
+    ],
     "series": "Core i5 10000",
     "variant": "10600KF",
     "releaseYear": 2020

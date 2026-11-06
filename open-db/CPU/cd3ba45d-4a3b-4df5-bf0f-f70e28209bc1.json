@@ -4,6 +4,7 @@
   "microarchitecture": "Rocket Lake",
   "coreFamily": "Rocket Lake-S",
   "socket": "LGA 1200",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 3,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+1x4",
+      "2x8+1x4",
+      "1x8+3x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512"
+  ],
+  "virtualization": [],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +62,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 11500",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070811500", "i5-11500"],
+    "part_numbers": [
+      "BX8070811500",
+      "i5-11500"
+    ],
     "series": "Core i5 11000",
     "variant": "11500",
     "releaseYear": 2021

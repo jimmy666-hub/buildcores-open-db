@@ -4,25 +4,60 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "X299"
+  ],
   "cores": {
     "total": 14,
     "performance": 14,
+    "efficiency": null,
     "threads": 28
   },
   "clocks": {
     "performance": {
       "base": 3.1,
       "boost": 4.4
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 14,
     "l3": 25
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 44,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 45.0mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": false,
@@ -31,16 +66,30 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 7940X 3.1 GHz 14-Core LGA2066 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CD8067303734701"],
-    "series": "Intel Core i9"
+    "part_numbers": [
+      "CD8067303734701"
+    ],
+    "series": "Intel Core i9",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

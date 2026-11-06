@@ -4,6 +4,15 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +34,38 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "71°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,19 +82,36 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4", "DDR3"],
-      "channels": 2
+      "types": [
+        "DDR4",
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 6600",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8066201920401", "BX80662I56600"],
+    "part_numbers": [
+      "CM8066201920401",
+      "BX80662I56600"
+    ],
     "series": "Core i5 6000",
     "variant": "6600",
     "releaseYear": 2015
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

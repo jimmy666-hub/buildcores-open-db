@@ -4,6 +4,7 @@
   "microarchitecture": "Broadwell",
   "coreFamily": "Broadwell-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 10,
     "performance": 0,
@@ -25,6 +26,34 @@
     "l2": 2.5,
     "l3": 25
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "45mm x 52.5mm",
+  "tcaseMax": "74°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 85,
     "ppt": 0,
@@ -41,14 +70,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 1536,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2630 v4",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80660E52630V4"],
+    "part_numbers": [
+      "BX80660E52630V4"
+    ],
     "series": "Xeon E5 2600 v4",
     "variant": "E5-2630 v4",
     "releaseYear": 2012

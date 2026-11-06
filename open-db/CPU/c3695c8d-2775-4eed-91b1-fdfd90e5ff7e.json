@@ -4,6 +4,11 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Kaveri",
   "socket": "FM2+",
+  "supportedChipsets": [
+    "A68H",
+    "A78",
+    "A88X"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +30,27 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +67,24 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A8-7600 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD7600YBI44JA"],
+    "part_numbers": [
+      "AD7600YBI44JA"
+    ],
     "series": "A-Series A8 7000",
     "variant": "7600",
     "releaseYear": 2014

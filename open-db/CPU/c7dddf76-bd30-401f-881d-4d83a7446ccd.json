@@ -4,25 +4,57 @@
   "microarchitecture": "Sandy Bridge",
   "coreFamily": "Sandy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 8,
+    "efficiency": null,
     "threads": 16
   },
   "clocks": {
     "performance": {
       "base": 2.2,
       "boost": 3
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 45.0mm",
+  "tcaseMax": "73 °C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 95,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": true,
     "includesCooler": false,
@@ -31,16 +63,31 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 0,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5 2660 2.2 GHz 8-Core LGA2011 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["SR0KK"],
-    "series": "Intel Xeon E5"
+    "part_numbers": [
+      "SR0KK"
+    ],
+    "series": "Intel Xeon E5",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

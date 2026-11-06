@@ -4,6 +4,11 @@
   "microarchitecture": "Zen 4",
   "coreFamily": "Storm Peak",
   "socket": "sTR5",
+  "supportedChipsets": [
+    "WRX90",
+    "TRX50",
+    "Pro 695"
+  ],
   "cores": {
     "total": 96,
     "performance": 0,
@@ -25,6 +30,51 @@
     "l2": 96,
     "l3": 384
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 148,
+    "cpuConfigurations": [
+      "1x16",
+      "2x16",
+      "4x8"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AVX",
+    "AVX2",
+    "AVX512",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Memory Guard",
+    "AMD Secure Processor",
+    "Windows Secure Boot",
+    "UEFI Secure Boot",
+    "Windows Device Guard",
+    "Guest Mode Execution (GMET) Trap",
+    "Virtualization-Based Security (VBS)",
+    "Windows Secured-Core PC",
+    "Firmware TPM",
+    "AMD Enhanced Virus Protection (NX bit)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 350,
     "ppt": 0,
@@ -41,14 +91,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 2048,
-      "types": ["DDR5"],
-      "channels": 8
+      "types": [
+        "DDR5"
+      ],
+      "channels": 8,
+      "maxSpeed": "5200 MT/s",
+      "eccModes": [
+        "ECC RDIMM"
+      ],
+      "unsupported": [
+        "UDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper PRO 7995WX",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000884WOF"],
+    "part_numbers": [
+      "100-100000884WOF"
+    ],
     "series": "Ryzen Threadripper PRO 7000",
     "variant": "7995WX",
     "releaseYear": 2023

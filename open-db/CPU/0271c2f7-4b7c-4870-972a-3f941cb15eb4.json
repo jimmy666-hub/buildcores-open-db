@@ -4,6 +4,11 @@
   "microarchitecture": "Kaby Lake",
   "coreFamily": "Kaby Lake",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +30,32 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "SGX"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 91,
     "ppt": 0,
@@ -41,14 +72,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4", "DDR3"],
-      "channels": 2
+      "types": [
+        "DDR4",
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 7700K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80677I77700K"],
+    "part_numbers": [
+      "BX80677I77700K"
+    ],
     "series": "Core i7 7000",
     "variant": "7700K",
     "releaseYear": 2017

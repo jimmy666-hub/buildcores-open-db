@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EP",
   "coreFamily": "Ivy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,34 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 51mm",
+  "tcaseMax": "75°C",
+  "instructionSets": [
+    "64-bit",
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +70,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2640 v2 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80635E52640V2"],
+    "part_numbers": [
+      "BX80635E52640V2"
+    ],
     "series": "Xeon E5 2600 v2",
     "variant": "2640 v2",
     "releaseYear": 2013

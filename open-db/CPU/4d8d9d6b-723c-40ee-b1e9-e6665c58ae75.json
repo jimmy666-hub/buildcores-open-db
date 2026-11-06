@@ -4,6 +4,13 @@
   "microarchitecture": "Arrow Lake",
   "coreFamily": "Lion Cove / Skymont",
   "socket": "LGA 1851",
+  "supportedChipsets": [
+    "Z890",
+    "B860",
+    "W880",
+    "Q870",
+    "H810"
+  ],
   "cores": {
     "total": 20,
     "performance": 8,
@@ -25,6 +32,39 @@
     "l2": 36,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "45 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Intel vPro Enterprise",
+    "Threat Detection Technology",
+    "Active Management Technology",
+    "Standard Manageability",
+    "Remote Platform Erase",
+    "One-Click Recovery",
+    "Secure Key",
+    "Control-Flow Enforcement Technology",
+    "Total Memory Encryption - Multi Key",
+    "AES New Instructions",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 250,
@@ -41,14 +81,28 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "6400 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core Ultra 7 265K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80768265K", "Intel® Core™ Ultra 7"],
+    "part_numbers": [
+      "BX80768265K",
+      "Intel® Core™ Ultra 7"
+    ],
     "series": "Intel Core Ultra 7 200",
     "variant": "265K",
     "releaseYear": 2022

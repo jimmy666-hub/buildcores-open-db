@@ -4,6 +4,18 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Matisse",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A300",
+    "X300",
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +37,35 @@
     "l2": 3,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "FMA3",
+    "AES-NI",
+    "SHA"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi",
+    "SVM"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,19 +82,35 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 3500X OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["100-000000158", "PIC18F4320-I PT", "TH8056 TH8056KDC TH8056KDC-AAA-008-RE"],
+    "part_numbers": [
+      "100-000000158",
+      "PIC18F4320-I PT",
+      "TH8056 TH8056KDC TH8056KDC-AAA-008-RE"
+    ],
     "series": "Ryzen 5 3000",
     "variant": "3500X",
     "releaseYear": 2019
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

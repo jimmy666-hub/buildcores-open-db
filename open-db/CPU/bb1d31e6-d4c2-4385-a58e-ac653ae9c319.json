@@ -4,6 +4,10 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell-EP",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "C612",
+    "X99"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +29,34 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 45mm",
+  "tcaseMax": "77.8°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "TXT",
+    "AES-NI",
+    "OS Guard",
+    "Secure Key",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 135,
     "ppt": 0,
@@ -41,14 +73,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2667 v3",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8064401724301"],
+    "part_numbers": [
+      "CM8064401724301"
+    ],
     "series": "Xeon E5 2600 v3",
     "variant": "E5-2667 v3",
     "releaseYear": 2014

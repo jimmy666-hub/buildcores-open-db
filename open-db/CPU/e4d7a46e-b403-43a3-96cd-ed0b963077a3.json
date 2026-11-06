@@ -4,25 +4,76 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 4,
     "performance": 4,
+    "efficiency": null,
     "threads": 4
   },
   "clocks": {
     "performance": {
       "base": 3.3,
       "boost": 4.3
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 71,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": true,
     "includesCooler": false,
@@ -31,16 +82,32 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E 2124 3.3 GHz 4-Core LGA1151",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80684E2124"],
-    "series": "Intel Xeon E"
+    "part_numbers": [
+      "BX80684E2124"
+    ],
+    "series": "Intel Xeon E",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

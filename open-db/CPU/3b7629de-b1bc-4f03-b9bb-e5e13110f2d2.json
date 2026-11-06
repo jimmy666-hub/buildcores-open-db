@@ -4,6 +4,7 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Kaveri",
   "socket": "FM2",
+  "supportedChipsets": [],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "40mm x 40mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "EVP"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +62,24 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD PRO A4-7300B OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD730BOKA23HL"],
+    "part_numbers": [
+      "AD730BOKA23HL"
+    ],
     "series": "PRO A4 7000",
     "variant": "7300B",
     "releaseYear": 2014

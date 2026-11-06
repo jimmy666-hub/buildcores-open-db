@@ -4,6 +4,13 @@
   "microarchitecture": "Ivy Bridge",
   "coreFamily": "Ivy Bridge",
   "socket": "LGA 1155",
+  "supportedChipsets": [
+    "Intel Q75 Express",
+    "Intel Q77 Express",
+    "Intel H77 Express",
+    "Intel Z75 Express",
+    "Intel Z77 Express"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +32,33 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8",
+      "1x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "69.1°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "XD bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +75,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 3570S OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8063701093901"],
+    "part_numbers": [
+      "CM8063701093901"
+    ],
     "series": "Core i5 3000",
     "variant": "3570S",
     "releaseYear": 2012

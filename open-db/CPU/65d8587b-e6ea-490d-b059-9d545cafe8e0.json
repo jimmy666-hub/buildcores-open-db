@@ -4,6 +4,15 @@
   "microarchitecture": "Alder Lake",
   "coreFamily": "Golden Cove",
   "socket": "LGA 1700",
+  "supportedChipsets": [
+    "H610",
+    "B660",
+    "H670",
+    "Z690",
+    "B760",
+    "H770",
+    "Z790"
+  ],
   "cores": {
     "total": 2,
     "performance": 2,
@@ -25,6 +34,37 @@
     "l2": 2.5,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+4",
+      "2x8+4"
+    ]
+  },
+  "packageSize": "45.0 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Control-flow Enforcement Technology",
+    "AES-NI",
+    "Secure Key",
+    "Mode-based Execute Control (MBEC)",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 46,
     "ppt": 0,
@@ -41,14 +81,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR5",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-4800 / DDR4-3200",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Pentium Gold G7400",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80715G7400", "G7400"],
+    "part_numbers": [
+      "BX80715G7400",
+      "G7400"
+    ],
     "series": "Pentium G7000",
     "variant": "G7400",
     "releaseYear": 2022

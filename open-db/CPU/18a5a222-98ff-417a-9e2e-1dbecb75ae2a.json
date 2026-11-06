@@ -4,6 +4,16 @@
   "microarchitecture": "Zen",
   "coreFamily": "Raven Ridge",
   "socket": "AM4",
+  "supportedChipsets": [
+    "A320",
+    "B350",
+    "X370",
+    "B450",
+    "X470",
+    "A520",
+    "B550",
+    "X570"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,12 +35,49 @@
     "l2": 2,
     "l3": 4
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 8,
+    "cpuConfigurations": [
+      "1x8"
+    ]
+  },
+  "packageSize": "40mm x 40mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4a",
+    "AVX",
+    "AVX2",
+    "FMA3",
+    "AES-NI",
+    "SHA",
+    "AMD64",
+    "AMD-V"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "EVP",
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
     "integratedGraphics": {
       "model": "AMD Radeon Vega 11 Graphics",
-      "boostClock": 1250
+      "baseClock": null,
+      "boostClock": 1250,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": false,
@@ -39,14 +86,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2933 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 2400G OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["YD2400C5M4MFB", "HBS-NAA-QPD985"],
+    "part_numbers": [
+      "YD2400C5M4MFB",
+      "HBS-NAA-QPD985"
+    ],
     "series": "Ryzen 5 2000",
     "variant": "2400G",
     "releaseYear": 2018

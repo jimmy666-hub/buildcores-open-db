@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EP",
   "coreFamily": "Ivy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,34 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 45mm",
+  "tcaseMax": "72°C",
+  "instructionSets": [
+    "64-bit",
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 150,
     "ppt": 0,
@@ -41,14 +70,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5 2687W v2",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80635E52687V2"],
+    "part_numbers": [
+      "BX80635E52687V2"
+    ],
     "series": "Xeon E5 2600 v2",
     "variant": "2687W v2",
     "releaseYear": 2013

@@ -4,6 +4,15 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +34,37 @@
     "l2": 0.5,
     "l3": 4
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "AES-NI",
+    "Secure Key",
+    "MPX",
+    "SGX with Intel ME",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 54,
     "ppt": 0,
@@ -41,14 +81,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Pentium Gold G5500",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80684G5500"],
+    "part_numbers": [
+      "BX80684G5500"
+    ],
     "series": "Pentium Gold G5000",
     "variant": "G5500",
     "releaseYear": 2018

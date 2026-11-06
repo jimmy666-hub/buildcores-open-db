@@ -4,6 +4,16 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake-S WS",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "C246",
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +35,38 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 80,
     "ppt": 0,
@@ -41,14 +83,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E-2146G",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80684E2146G"],
+    "part_numbers": [
+      "BX80684E2146G"
+    ],
     "series": "Xeon E 2100",
     "variant": "2146G",
     "releaseYear": 2018

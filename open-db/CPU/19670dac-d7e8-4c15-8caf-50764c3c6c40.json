@@ -4,6 +4,16 @@
   "microarchitecture": "Haswell Refresh",
   "coreFamily": "Haswell",
   "socket": "LGA 1150",
+  "supportedChipsets": [
+    "Intel H97",
+    "Intel Z97",
+    "Intel H81",
+    "Intel B85",
+    "Intel H87",
+    "Intel Q87",
+    "Intel Q85",
+    "Intel Z87"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +35,33 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "71.45°C",
+  "instructionSets": [
+    "SSE4.2",
+    "AVX",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "Secure Key",
+    "Identity Protection Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 45,
     "ppt": 0,
@@ -41,14 +78,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 4790T OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8064601561513", "LYSB00KDMFXJI-CMPTRACCS"],
+    "part_numbers": [
+      "CM8064601561513",
+      "LYSB00KDMFXJI-CMPTRACCS"
+    ],
     "series": "Core i7 4000",
     "variant": "4790T",
     "releaseYear": 2014

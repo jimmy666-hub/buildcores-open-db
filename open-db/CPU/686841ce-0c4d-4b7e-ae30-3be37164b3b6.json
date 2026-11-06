@@ -4,6 +4,7 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Richland",
   "socket": "FM2",
+  "supportedChipsets": [],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +26,23 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +59,26 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1333 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A4-4020 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD4020OKA23HL"],
+    "part_numbers": [
+      "AD4020OKA23HL"
+    ],
     "series": "A-Series A4 4000",
     "variant": "4020",
     "releaseYear": 2014

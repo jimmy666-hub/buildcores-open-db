@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EP",
   "coreFamily": "Ivy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 12,
     "performance": 0,
@@ -25,6 +26,29 @@
     "l2": 3,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 51mm",
+  "tcaseMax": "86°C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Secure Key"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 130,
     "ppt": 0,
@@ -41,14 +65,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2697 v2",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80635E52697V2"],
+    "part_numbers": [
+      "BX80635E52697V2"
+    ],
     "series": "Xeon E5 2600 v2",
     "variant": "2697 v2",
     "releaseYear": 2013

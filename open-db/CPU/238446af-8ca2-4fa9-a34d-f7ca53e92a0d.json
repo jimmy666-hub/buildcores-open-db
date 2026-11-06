@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EP",
   "coreFamily": "Ivy Bridge-E",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,29 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 45.0 mm",
+  "tcaseMax": "70°C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Secure Key",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 130,
     "ppt": 0,
@@ -41,14 +65,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-1650 v2 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8063501292204"],
+    "part_numbers": [
+      "CM8063501292204"
+    ],
     "series": "Xeon E5 1600 v2",
     "variant": "1650 v2",
     "releaseYear": 2013

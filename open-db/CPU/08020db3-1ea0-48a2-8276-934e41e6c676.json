@@ -4,6 +4,14 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Richland",
   "socket": "FM2",
+  "supportedChipsets": [
+    "A88X",
+    "A85X",
+    "A78",
+    "A75",
+    "A68H",
+    "A55"
+  ],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +33,31 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "FMA3",
+    "AES-NI",
+    "SSE4a",
+    "SSE4.1",
+    "SSE4.2",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +74,26 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A4-6300 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["AD6300OKA23HL"],
+    "part_numbers": [
+      "AD6300OKA23HL"
+    ],
     "series": "A-Series A4 6000",
     "variant": "6300",
     "releaseYear": 2013

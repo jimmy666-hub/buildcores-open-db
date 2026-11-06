@@ -4,6 +4,10 @@
   "microarchitecture": "Broadwell",
   "coreFamily": "Broadwell-EP",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "X99",
+    "C612"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +29,34 @@
     "l2": 1.5,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "45mm x 52.5mm",
+  "tcaseMax": "75°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "TXT",
+    "AES-NI",
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 135,
     "ppt": 0,
@@ -41,14 +73,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 1536,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2643 v4",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8066002041500"],
+    "part_numbers": [
+      "CM8066002041500"
+    ],
     "series": "Xeon E5 2600 v4",
     "variant": "E5-2643 v4",
     "releaseYear": 2016

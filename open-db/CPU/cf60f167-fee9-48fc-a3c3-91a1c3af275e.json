@@ -4,6 +4,9 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Castle Peak",
   "socket": "sTRX4",
+  "supportedChipsets": [
+    "TRX40"
+  ],
   "cores": {
     "total": 64,
     "performance": 0,
@@ -25,6 +28,39 @@
     "l2": 32,
     "l3": 256
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 64,
+    "cpuConfigurations": []
+  },
+  "packageSize": "75.40mm x 58.50mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86-64",
+    "AES",
+    "AMD-V",
+    "AVX",
+    "AVX2",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "PCIe DMA Security",
+    "USB DMA Security",
+    "AMD Enhanced Virus Protection (NX bit)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 280,
     "ppt": 280,
@@ -41,14 +77,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "DDR4-3200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper 3990X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000163WOF", "AMD Ryzen Threadripper 3990X"],
+    "part_numbers": [
+      "100-100000163WOF",
+      "AMD Ryzen Threadripper 3990X"
+    ],
     "series": "Threadripper 3000",
     "variant": "3990X",
     "releaseYear": 2020

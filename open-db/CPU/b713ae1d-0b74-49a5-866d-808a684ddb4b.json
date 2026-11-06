@@ -4,25 +4,59 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Godavari",
   "socket": "FM2+",
+  "supportedChipsets": [
+    "A88X",
+    "A85X",
+    "A78",
+    "A75",
+    "A68H"
+  ],
   "cores": {
     "total": 2,
     "performance": 2,
+    "efficiency": null,
     "threads": 2
   },
   "clocks": {
     "performance": {
       "base": 3.7,
       "boost": 4
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "AMD Radeon R5 (on-die)"
+      "model": "AMD Radeon R5 (on-die)",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": true,
@@ -31,16 +65,31 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 0,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A 6 7470K 3.7 GHz 2-Core FM2+",
     "manufacturer": "AMD",
-    "part_numbers": ["AD747KYBJCBOX"],
-    "series": "AMD A6"
+    "part_numbers": [
+      "AD747KYBJCBOX"
+    ],
+    "series": "AMD A6",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

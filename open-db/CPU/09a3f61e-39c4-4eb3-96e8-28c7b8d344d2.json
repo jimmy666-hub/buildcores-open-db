@@ -4,6 +4,7 @@
   "microarchitecture": "Sandy Bridge EP",
   "coreFamily": "Sandy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": []
+  },
+  "packageSize": "52.5mm x 45.0mm",
+  "tcaseMax": "73 °C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +62,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 384,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2660 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["SR0GZ", "BX80621E52660"],
+    "part_numbers": [
+      "SR0GZ",
+      "BX80621E52660"
+    ],
     "series": "Xeon E5 2600",
     "variant": "2660",
     "releaseYear": 2012

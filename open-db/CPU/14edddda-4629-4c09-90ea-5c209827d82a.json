@@ -4,6 +4,11 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Vishera",
   "socket": "AM3+",
+  "supportedChipsets": [
+    "AMD 990FX",
+    "AMD 970",
+    "AMD 760G"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +30,34 @@
     "l2": 8,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4a",
+    "AMD64",
+    "AES",
+    "AVX",
+    "CLMUL",
+    "CVT16",
+    "EVP"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 0,
@@ -41,19 +74,31 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD FX-8370",
     "manufacturer": "AMD",
-    "part_numbers": ["FD8370FRHKHBX"],
+    "part_numbers": [
+      "FD8370FRHKHBX"
+    ],
     "series": "FX 8000",
     "variant": "8370",
     "releaseYear": 2014
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

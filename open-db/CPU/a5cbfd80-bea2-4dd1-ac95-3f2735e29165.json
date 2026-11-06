@@ -4,6 +4,13 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Godaveri",
   "socket": "FM2+",
+  "supportedChipsets": [
+    "A88X",
+    "A85X",
+    "A78",
+    "A75",
+    "A68H"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +32,23 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": "72°C",
+  "instructionSets": [
+    "AVX",
+    "AES-NI",
+    "FMA"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,19 +65,34 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Athlon X4 870K",
     "manufacturer": "AMD",
-    "part_numbers": ["AD870KXBJCSBX", "HB30C3A1CFS", "Black", "B960956"],
+    "part_numbers": [
+      "AD870KXBJCSBX",
+      "HB30C3A1CFS",
+      "Black",
+      "B960956"
+    ],
     "series": "Athlon X4 800",
     "variant": "870K",
     "releaseYear": 2015
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

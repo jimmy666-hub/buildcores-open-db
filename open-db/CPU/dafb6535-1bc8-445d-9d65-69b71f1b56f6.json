@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EN",
   "coreFamily": "Ivy Bridge-EN",
   "socket": "LGA 1356",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,34 @@
     "l2": 1.5,
     "l3": 15
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "45mm x 42.5mm",
+  "tcaseMax": "76°C",
+  "instructionSets": [
+    "64-bit",
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 80,
     "ppt": 0,
@@ -41,14 +70,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 384,
-      "types": ["DDR3"],
-      "channels": 3
+      "types": [
+        "DDR3"
+      ],
+      "channels": 3,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2420 v2",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80634E52420V2"],
+    "part_numbers": [
+      "BX80634E52420V2"
+    ],
     "series": "Xeon E5 2400 v2",
     "variant": "2420 v2",
     "releaseYear": 2013

@@ -4,25 +4,71 @@
   "microarchitecture": "Coffee Lake Refresh",
   "coreFamily": "Coffee Lake Refresh",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "C242",
+    "C246"
+  ],
   "cores": {
     "total": 4,
     "performance": 4,
+    "efficiency": null,
     "threads": 8
   },
   "clocks": {
     "performance": {
       "base": 3.8,
       "boost": 4.8
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": "69.3°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 71,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "Intel HD Graphics P630"
+      "model": "Intel HD Graphics P630",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": true,
     "includesCooler": false,
@@ -31,16 +77,32 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E 2244G 3.8 GHz 4-Core LGA1151",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8068404175105"],
-    "series": "Intel Xeon E"
+    "part_numbers": [
+      "CM8068404175105"
+    ],
+    "series": "Intel Xeon E",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

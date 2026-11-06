@@ -4,6 +4,7 @@
   "microarchitecture": "Steamroller",
   "coreFamily": "Kaveri",
   "socket": "FM2+",
+  "supportedChipsets": [],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +26,26 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU 2.0"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +62,24 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A6-7400K",
     "manufacturer": "AMD",
-    "part_numbers": ["AD740KYBJABOX"],
+    "part_numbers": [
+      "AD740KYBJABOX"
+    ],
     "series": "A6-7000",
     "variant": "A6-7400K",
     "releaseYear": 2014

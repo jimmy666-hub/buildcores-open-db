@@ -4,6 +4,10 @@
   "microarchitecture": "Comet Lake",
   "coreFamily": "Comet Lake",
   "socket": "LGA 1200",
+  "supportedChipsets": [
+    "Intel 400 Series",
+    "Intel 500 Series"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +29,38 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "AES-NI",
+    "Secure Key",
+    "OS Guard",
+    "SGX with Intel ME",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +77,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i3 10105",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070110105"],
+    "part_numbers": [
+      "BX8070110105"
+    ],
     "series": "Core i3 10000",
     "variant": "10105",
     "releaseYear": 2021

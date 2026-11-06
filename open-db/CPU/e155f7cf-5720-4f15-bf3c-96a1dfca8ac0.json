@@ -4,6 +4,9 @@
   "microarchitecture": "Zen 2",
   "coreFamily": "Castle Peak",
   "socket": "sTRX4",
+  "supportedChipsets": [
+    "TRX40"
+  ],
   "cores": {
     "total": 32,
     "performance": 0,
@@ -25,6 +28,17 @@
     "l2": 16,
     "l3": 128
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 72,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [],
+  "virtualization": [],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 280,
     "ppt": 0,
@@ -41,14 +55,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper 3970X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000011WOF", "AMD Ryzen Threadripper 3970X"],
+    "part_numbers": [
+      "100-100000011WOF",
+      "AMD Ryzen Threadripper 3970X"
+    ],
     "series": "Ryzen Threadripper 3970X",
     "variant": "3970X",
     "releaseYear": 2019

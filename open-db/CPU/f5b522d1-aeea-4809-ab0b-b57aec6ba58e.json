@@ -4,6 +4,9 @@
   "microarchitecture": "Arrow Lake",
   "coreFamily": "Lion Cove / Skymont",
   "socket": "LGA 1851",
+  "supportedChipsets": [
+    "Intel 800 Series Chipset"
+  ],
   "cores": {
     "total": 20,
     "performance": 8,
@@ -25,6 +28,29 @@
     "l2": 36,
     "l3": 30
   },
+  "pcie": {
+    "cpuVersion": "5.0 and 4.0",
+    "cpuMaxLanes": 24,
+    "cpuConfigurations": [
+      "1x16+2x4",
+      "2x8+2x4",
+      "1x8+4x4"
+    ]
+  },
+  "packageSize": "45 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "64-bit"
+  ],
+  "virtualization": [],
+  "security": [
+    "Intel Threat Detection Technology (TDT)",
+    "Intel Active Management Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 250,
@@ -41,14 +67,28 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5 6400 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core Ultra 7 265KF",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80768265KF", "Intel Core Ultra 7 265KF"],
+    "part_numbers": [
+      "BX80768265KF",
+      "Intel Core Ultra 7 265KF"
+    ],
     "series": "Core Ultra 7 200",
     "variant": "265KF",
     "releaseYear": 2024

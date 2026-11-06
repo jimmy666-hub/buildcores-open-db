@@ -4,6 +4,15 @@
   "microarchitecture": "Kaby Lake",
   "coreFamily": "Kaby Lake",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +34,39 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "OS Guard",
+    "Execute Disable Bit",
+    "Boot Guard"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 91,
     "ppt": 0,
@@ -41,14 +83,28 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR3",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 7600K",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8067702868219"],
+    "part_numbers": [
+      "CM8067702868219"
+    ],
     "series": "Core i5 7000",
     "variant": "7600K",
     "releaseYear": 2017

@@ -4,6 +4,10 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake-S WS",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "C242",
+    "C246"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +29,38 @@
     "l2": 1.5,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": "73.0°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "AES-NI",
+    "Secure Key",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 80,
     "ppt": 0,
@@ -41,14 +77,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E-2236 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8068404174603"],
+    "part_numbers": [
+      "CM8068404174603"
+    ],
     "series": "Xeon E 2200",
     "variant": "2236",
     "releaseYear": 2019

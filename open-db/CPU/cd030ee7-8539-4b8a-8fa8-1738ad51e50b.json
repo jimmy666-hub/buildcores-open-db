@@ -4,6 +4,9 @@
   "microarchitecture": "Zen 4",
   "coreFamily": "Storm Peak",
   "socket": "sTR5",
+  "supportedChipsets": [
+    "TRX50"
+  ],
   "cores": {
     "total": 32,
     "performance": 0,
@@ -25,8 +28,59 @@
     "l2": 32,
     "l3": 128
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 48,
+    "cpuConfigurations": [
+      "1x16",
+      "2x16",
+      "4x8"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AMD-V",
+    "AVX",
+    "AVX2",
+    "AVX512",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-V Nested Paging (RVI)",
+    "AMD AVIC",
+    "AMD-Vi",
+    "SLAT"
+  ],
+  "security": [
+    "AMD Memory Guard",
+    "AMD Secure Processor",
+    "Windows Secure Boot",
+    "UEFI Secure Boot",
+    "Windows Device Guard",
+    "GMET Trap",
+    "VBS",
+    "Windows Secured-Core PC",
+    "Firmware TPM",
+    "AES-NI",
+    "NX bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 350,
+    "ppt": null,
     "integratedGraphics": {
       "model": "None",
       "baseClock": 0,
@@ -40,14 +94,37 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 1,
-      "types": ["DDR5"],
-      "channels": 4
+      "types": [
+        "DDR5"
+      ],
+      "channels": 4,
+      "maxSpeed": "5200 MT/s",
+      "eccModes": [
+        "ECC RDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM",
+        "UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen Threadripper 7970X",
-    "part_numbers": ["AMD Ryzen™ Threadripper™ 7970X", "100-100001351WOF"],
+    "manufacturer": null,
+    "part_numbers": [
+      "AMD Ryzen™ Threadripper™ 7970X",
+      "100-100001351WOF"
+    ],
+    "series": null,
+    "variant": null,
     "releaseYear": 0
   },
-  "general_product_information": {}
+  "general_product_information": {
+    "manufacturer_url": null
+  },
+  "identifiers": {
+    "version": null,
+    "identifiers": [],
+    "retailer_listings": []
+  }
 }

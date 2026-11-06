@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 4",
   "coreFamily": "Raphael",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "X670E",
+    "X670",
+    "B650E",
+    "B650",
+    "X870E",
+    "X870",
+    "B840",
+    "B850"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +36,43 @@
     "l2": 6,
     "l3": 96
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": "61°C",
+  "instructionSets": [
+    "AES",
+    "AMD-V",
+    "AVX",
+    "AVX2",
+    "AVX512",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,14 +89,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "5200 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 7600X3D",
     "manufacturer": "AMD",
-    "part_numbers": ["100-000001721"],
+    "part_numbers": [
+      "100-000001721"
+    ],
     "series": "Ryzen 5 7000",
     "variant": "7600X3D",
     "releaseYear": 2024

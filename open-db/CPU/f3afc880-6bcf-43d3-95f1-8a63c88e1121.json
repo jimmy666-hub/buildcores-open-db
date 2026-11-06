@@ -4,6 +4,7 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Richland",
   "socket": "FM2",
+  "supportedChipsets": [],
   "cores": {
     "total": 2,
     "performance": 0,
@@ -25,6 +26,39 @@
     "l2": 1,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": "2.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": []
+  },
+  "packageSize": "40mm x 40mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4a",
+    "AES",
+    "AVX",
+    "BMI1",
+    "F16C",
+    "FMA3",
+    "FMA4",
+    "TBM",
+    "XOP",
+    "AMD64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "EVP"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +75,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Sempron X2 250 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["SD250XOKA23HL"],
+    "part_numbers": [
+      "SD250XOKA23HL"
+    ],
     "series": "Sempron X2 200",
     "variant": "250",
     "releaseYear": 2013

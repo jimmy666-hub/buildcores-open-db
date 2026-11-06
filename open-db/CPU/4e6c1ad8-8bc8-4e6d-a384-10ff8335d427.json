@@ -4,6 +4,7 @@
   "microarchitecture": "Broadwell",
   "coreFamily": "Broadwell-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 14,
     "performance": 0,
@@ -25,6 +26,31 @@
     "l2": 3.5,
     "l3": 35
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "45mm x 52.5mm",
+  "tcaseMax": "86°C",
+  "instructionSets": [
+    "64-bit",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Secure Key"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 120,
     "ppt": 0,
@@ -41,14 +67,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 1536,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2400 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2680 v4",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80660E52680V4"],
+    "part_numbers": [
+      "BX80660E52680V4"
+    ],
     "series": "Xeon E5-2600 v4",
     "variant": "E5-2680 v4",
     "releaseYear": 2012

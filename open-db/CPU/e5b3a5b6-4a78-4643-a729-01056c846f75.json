@@ -4,6 +4,18 @@
   "microarchitecture": "Rocket Lake",
   "coreFamily": "Rocket Lake-S",
   "socket": "LGA 1200",
+  "supportedChipsets": [
+    "H510",
+    "B560",
+    "H570",
+    "Q570",
+    "W580",
+    "Z590",
+    "Q470",
+    "H470",
+    "W480",
+    "Z490"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +37,36 @@
     "l2": 4,
     "l3": 16
   },
+  "pcie": {
+    "cpuVersion": "4.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+1x4",
+      "2x8+1x4",
+      "1x8+3x4"
+    ]
+  },
+  "packageSize": "37.5 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Secure Key",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 125,
     "ppt": 0,
@@ -41,14 +83,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "3200 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 11700KF",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8070811700KF"],
+    "part_numbers": [
+      "BX8070811700KF"
+    ],
     "series": "Core i7 11000",
     "variant": "11700KF",
     "releaseYear": 2021

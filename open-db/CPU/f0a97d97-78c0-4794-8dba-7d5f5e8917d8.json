@@ -4,6 +4,11 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Richland",
   "socket": "FM2",
+  "supportedChipsets": [
+    "A55",
+    "A75",
+    "A85X"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +30,26 @@
     "l2": 4,
     "l3": 0
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AVX",
+    "FMA4",
+    "AES"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "IOMMU v2.0"
+  ],
+  "security": [
+    "Enhanced Virus Protection"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 45,
     "ppt": 0,
@@ -41,14 +66,24 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD A-Series A10 6800B",
     "manufacturer": "AMD",
-    "part_numbers": ["AD680BWOA44HL"],
+    "part_numbers": [
+      "AD680BWOA44HL"
+    ],
     "series": "A-Series A10 6000",
     "variant": "6800B",
     "releaseYear": 2013

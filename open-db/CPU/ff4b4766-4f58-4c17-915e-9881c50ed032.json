@@ -4,6 +4,15 @@
   "microarchitecture": "Alder Lake",
   "coreFamily": "Golden Cove",
   "socket": "LGA 1700",
+  "supportedChipsets": [
+    "H610",
+    "B660",
+    "H670",
+    "Z690",
+    "B760",
+    "H770",
+    "Z790"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +34,37 @@
     "l2": 7.5,
     "l3": 18
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 20,
+    "cpuConfigurations": [
+      "1x16+4",
+      "2x8+4"
+    ]
+  },
+  "packageSize": "45.0mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Control-flow Enforcement Technology",
+    "AES-NI",
+    "Secure Key",
+    "Execute Disable Bit",
+    "Mode-based Execute Control (MBEC)"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 117,
@@ -41,14 +81,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5", "DDR4"],
-      "channels": 2
+      "types": [
+        "DDR5",
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-4800 / DDR4-3200",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 12400",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8071512400"],
+    "part_numbers": [
+      "BX8071512400"
+    ],
     "series": "Core i5 12000",
     "variant": "12400",
     "releaseYear": 2022

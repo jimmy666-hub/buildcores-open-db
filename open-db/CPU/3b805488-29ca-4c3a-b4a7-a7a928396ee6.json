@@ -4,6 +4,7 @@
   "microarchitecture": "Skylake",
   "coreFamily": "Skylake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [],
   "cores": {
     "total": 10,
     "performance": 0,
@@ -25,6 +26,28 @@
     "l2": 10,
     "l3": 19.25
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
     "ppt": 0,
@@ -41,14 +64,24 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 9900X",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80673I99900X"],
+    "part_numbers": [
+      "BX80673I99900X"
+    ],
     "series": "Core i9 9000",
     "variant": "9900X",
     "releaseYear": 2018

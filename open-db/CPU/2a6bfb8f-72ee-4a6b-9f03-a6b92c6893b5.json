@@ -4,6 +4,7 @@
   "microarchitecture": "Arrow Lake",
   "coreFamily": "Lion Cove / Skymont",
   "socket": "LGA 1851",
+  "supportedChipsets": [],
   "cores": {
     "total": 10,
     "performance": 6,
@@ -25,6 +26,33 @@
     "l2": 22,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "45 mm x 37.5 mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "64-bit",
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Secure Key",
+    "CET",
+    "TXT",
+    "TDT",
+    "Boot Guard"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 121,
@@ -41,14 +69,25 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5 6400 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core Ultra 5 225F",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80768225F"],
+    "part_numbers": [
+      "BX80768225F"
+    ],
     "series": "Core Ultra 5 200",
     "variant": "225F",
     "releaseYear": 2025

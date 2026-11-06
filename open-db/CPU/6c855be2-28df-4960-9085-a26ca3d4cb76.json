@@ -4,6 +4,9 @@
   "microarchitecture": "Cascade Lake",
   "coreFamily": "Cascade Lake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "X299"
+  ],
   "cores": {
     "total": 18,
     "performance": 0,
@@ -25,6 +28,28 @@
     "l2": 18,
     "l3": 24.75
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 48,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
     "ppt": 0,
@@ -41,14 +66,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2933 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 10980XE",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8069510980XE", "BX8069510920X"],
+    "part_numbers": [
+      "BX8069510980XE",
+      "BX8069510920X"
+    ],
     "series": "Core i9 10000",
     "variant": "10980XE",
     "releaseYear": 2019

@@ -4,6 +4,15 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake Refresh",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "B365",
+    "Z390",
+    "Q370",
+    "H370",
+    "B360",
+    "H310",
+    "Z370"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +34,38 @@
     "l2": 1.5,
     "l3": 9
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Boot Guard",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Secure Key",
+    "SGX",
+    "MPX"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 35,
     "ppt": 0,
@@ -41,14 +82,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 9500T OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8068403362510"],
+    "part_numbers": [
+      "CM8068403362510"
+    ],
     "series": "Core i5 9000",
     "variant": "9500T",
     "releaseYear": 2018

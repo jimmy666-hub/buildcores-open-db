@@ -4,25 +4,62 @@
   "microarchitecture": "Kaby Lake",
   "coreFamily": "Kaby Lake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "Intel X299"
+  ],
   "cores": {
     "total": 4,
     "performance": 4,
+    "efficiency": null,
     "threads": 4
   },
   "clocks": {
     "performance": {
       "base": 4,
       "boost": 4.2
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "Intel 64"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 112,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "None"
+      "model": "None",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": false,
@@ -31,16 +68,32 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 7640X 4 GHz 4-Core LGA2066",
     "manufacturer": "Intel",
-    "part_numbers": ["BXC80677I57640X"],
-    "series": "Intel Core i5"
+    "part_numbers": [
+      "BXC80677I57640X"
+    ],
+    "series": "Intel Core i5",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

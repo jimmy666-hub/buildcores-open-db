@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EP",
   "coreFamily": "Ivy Bridge-E",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +26,34 @@
     "l2": 1.5,
     "l3": 15
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 45.0 mm",
+  "tcaseMax": "70°C",
+  "instructionSets": [
+    "Intel AVX",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 130,
     "ppt": 0,
@@ -41,14 +70,24 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5 1660 V2 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80635E51660V2", "INT-BX80635E51660V2"],
+    "part_numbers": [
+      "BX80635E51660V2",
+      "INT-BX80635E51660V2"
+    ],
     "series": "Xeon E5 1600 v2",
     "variant": "1660 v2",
     "releaseYear": 2013

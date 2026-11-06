@@ -4,6 +4,10 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell-EP",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "X99",
+    "C612"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +29,34 @@
     "l2": 1,
     "l3": 10
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 45mm",
+  "tcaseMax": "80.2°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "TXT",
+    "AES-NI",
+    "OS Guard",
+    "Secure Key",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 105,
     "ppt": 0,
@@ -41,14 +73,25 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2623 v3 OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8064401832000"],
+    "part_numbers": [
+      "CM8064401832000"
+    ],
     "series": "Xeon E5 2600 v3",
     "variant": "2623 v3",
     "releaseYear": 2014

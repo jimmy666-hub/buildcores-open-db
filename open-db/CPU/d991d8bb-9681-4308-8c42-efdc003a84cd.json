@@ -4,6 +4,16 @@
   "microarchitecture": "Coffee Lake",
   "coreFamily": "Coffee Lake Refresh",
   "socket": "LGA 1151",
+  "supportedChipsets": [
+    "H110",
+    "B150",
+    "H170",
+    "Z170",
+    "B250",
+    "H270",
+    "Z270",
+    "Z390"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +35,38 @@
     "l2": 2,
     "l3": 12
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "Boot Guard",
+    "OS Guard",
+    "SGX",
+    "MPX",
+    "TXT",
+    "Secure Key",
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +83,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "2666 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 9700K",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80684I79700K"],
+    "part_numbers": [
+      "BX80684I79700K"
+    ],
     "series": "Core i7 9000",
     "variant": "9700K",
     "releaseYear": 2018

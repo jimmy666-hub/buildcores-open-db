@@ -4,6 +4,12 @@
   "microarchitecture": "Haswell Refresh",
   "coreFamily": "Haswell",
   "socket": "LGA 1150",
+  "supportedChipsets": [
+    "Z87",
+    "H87",
+    "Z97",
+    "H97"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +31,35 @@
     "l2": 1,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "74.04°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI",
+    "SSE4.2",
+    "SSE4.1"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "AES-NI",
+    "OS Guard",
+    "Secure Key",
+    "Execute Disable Bit",
+    "Anti-Theft Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 88,
     "ppt": 0,
@@ -41,14 +76,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM",
+        "ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 4790K",
     "manufacturer": "Intel",
-    "part_numbers": ["BXF80646I74790K"],
+    "part_numbers": [
+      "BXF80646I74790K"
+    ],
     "series": "Core i7 4000",
     "variant": "4790K",
     "releaseYear": 2014

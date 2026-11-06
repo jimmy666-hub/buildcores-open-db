@@ -4,6 +4,7 @@
   "microarchitecture": "Piledriver",
   "coreFamily": "Vishera",
   "socket": "AM3+",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,40 @@
     "l2": 8,
     "l3": 8
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": "40.0mm x 40.0mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86",
+    "x86-64",
+    "MMX",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4a",
+    "AVX",
+    "FMA3",
+    "FMA4",
+    "XOP",
+    "AES-NI",
+    "BMI1",
+    "TBM",
+    "ABM"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "EVP"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 220,
     "ppt": 0,
@@ -41,14 +76,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD FX-9370 OEM/Tray",
     "manufacturer": "AMD",
-    "part_numbers": ["FD9370FHHKWOF"],
+    "part_numbers": [
+      "FD9370FHHKWOF"
+    ],
     "series": "FX 9000",
     "variant": "9370",
     "releaseYear": 2013

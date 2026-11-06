@@ -4,6 +4,10 @@
   "microarchitecture": "Broadwell",
   "coreFamily": "Broadwell",
   "socket": "LGA 1150",
+  "supportedChipsets": [
+    "Intel H97",
+    "Intel Z97"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +29,34 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit",
+    "Anti-Theft Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 0,
@@ -41,14 +73,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i7 5775C OEM/Tray",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8065802483301"],
+    "part_numbers": [
+      "CM8065802483301"
+    ],
     "series": "Core i7 5000",
     "variant": "5775C",
     "releaseYear": 2015

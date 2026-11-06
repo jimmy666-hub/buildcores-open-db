@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 5",
   "coreFamily": "Granite Ridge",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "X670E",
+    "X670",
+    "B650E",
+    "B650",
+    "X870E",
+    "X870",
+    "B840",
+    "B850"
+  ],
   "cores": {
     "total": 6,
     "performance": 0,
@@ -25,6 +36,28 @@
     "l2": 6,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V",
+    "AMD-Vi"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 65,
     "ppt": 88,
@@ -41,14 +74,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "5600 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 5 9600X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100001405WOF", "AMD Ryzen™ 5 9600X", "100100001405WOF"],
+    "part_numbers": [
+      "100-100001405WOF",
+      "AMD Ryzen™ 5 9600X",
+      "100100001405WOF"
+    ],
     "series": "Ryzen 5 9000",
     "variant": "9600X",
     "releaseYear": 2024

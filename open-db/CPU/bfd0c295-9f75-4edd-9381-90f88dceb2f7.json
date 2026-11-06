@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge",
   "coreFamily": "Ivy Bridge",
   "socket": "LGA 1155",
+  "supportedChipsets": [],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +26,36 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": null,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8 & 2x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "67.4°C",
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "VT-x with EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "Execute Disable Bit",
+    "Anti-Theft Technology",
+    "Identity Protection Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 77,
     "ppt": 0,
@@ -41,14 +72,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 32,
-      "types": ["DDR3"],
-      "channels": 2
+      "types": [
+        "DDR3"
+      ],
+      "channels": 2,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 3340",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80637I53340"],
+    "part_numbers": [
+      "BX80637I53340"
+    ],
     "series": "Core i5 3000",
     "variant": "3340",
     "releaseYear": 2013

@@ -1,0 +1,80 @@
+{
+  "_comment": "CPU 标准字段模板：兼容现有 open-db 结构 + 扩展规格字段。正式条目请删除带 _ 的说明键；未知值保持 null / []。",
+  "opendb_id": null,
+  "series": null,
+  "microarchitecture": null,
+  "coreFamily": null,
+  "socket": null,
+  "supportedChipsets": [],
+  "cores": {
+    "total": null,
+    "performance": null,
+    "efficiency": null,
+    "threads": null
+  },
+  "clocks": {
+    "performance": {
+      "base": null,
+      "boost": null
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
+    }
+  },
+  "cache": {
+    "l1": null,
+    "l2": null,
+    "l3": null
+  },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [],
+  "virtualization": [],
+  "security": [],
+  "multisocket": null,
+  "specifications": {
+    "tdp": null,
+    "ppt": null,
+    "integratedGraphics": {
+      "model": null,
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
+    },
+    "eccSupport": null,
+    "includesCooler": null,
+    "packaging": null,
+    "lithography": null,
+    "simultaneousMultithreading": null,
+    "memory": {
+      "maxSupport": null,
+      "types": [],
+      "channels": null,
+      "maxSpeed": null,
+      "eccModes": [],
+      "unsupported": []
+    }
+  },
+  "metadata": {
+    "name": null,
+    "manufacturer": null,
+    "part_numbers": [],
+    "series": null,
+    "variant": null,
+    "releaseYear": null
+  },
+  "general_product_information": {
+    "manufacturer_url": null
+  },
+  "identifiers": {
+    "version": null,
+    "identifiers": [],
+    "retailer_listings": []
+  }
+}

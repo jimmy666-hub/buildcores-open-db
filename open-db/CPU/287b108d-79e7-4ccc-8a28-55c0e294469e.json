@@ -4,25 +4,72 @@
   "microarchitecture": "Haswell Refresh",
   "coreFamily": "Haswell Refresh",
   "socket": "LGA 1150",
+  "supportedChipsets": [
+    "H81",
+    "B85",
+    "H87",
+    "Z87",
+    "H97",
+    "Z97"
+  ],
   "cores": {
     "total": 4,
     "performance": 4,
+    "efficiency": null,
     "threads": 4
   },
   "clocks": {
     "performance": {
       "base": 3.5,
       "boost": 3.9
+    },
+    "efficiency": {
+      "base": null,
+      "boost": null
     }
   },
   "cache": {
+    "l1": null,
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8",
+      "1x4"
+    ]
+  },
+  "packageSize": "37.5mm x 37.5mm",
+  "tcaseMax": "72.72°C",
+  "instructionSets": [
+    "SSE4.2",
+    "AVX",
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit",
+    "Anti-Theft Technology"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 88,
+    "ppt": null,
     "integratedGraphics": {
-      "model": "Intel HD Graphics 4600"
+      "model": "Intel HD Graphics 4600",
+      "baseClock": null,
+      "boostClock": null,
+      "shaderCount": null
     },
     "eccSupport": false,
     "includesCooler": false,
@@ -31,16 +78,32 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 0,
-      "types": []
+      "types": [],
+      "channels": null,
+      "maxSpeed": "1600 MT/s",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 4690K 3.5 GHz 4-Core LGA1150",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8064601710803"],
-    "series": "Intel Core i5"
+    "part_numbers": [
+      "CM8064601710803"
+    ],
+    "series": "Intel Core i5",
+    "variant": null,
+    "releaseYear": null
   },
-  "general_product_information": {},
+  "general_product_information": {
+    "manufacturer_url": null
+  },
   "identifiers": {
     "version": 1,
     "identifiers": [

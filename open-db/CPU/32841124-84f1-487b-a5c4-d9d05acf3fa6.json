@@ -4,6 +4,9 @@
   "microarchitecture": "Cascade Lake",
   "coreFamily": "Cascade Lake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "Intel X299"
+  ],
   "cores": {
     "total": 10,
     "performance": 0,
@@ -25,6 +28,28 @@
     "l2": 10,
     "l3": 19.25
   },
+  "pcie": {
+    "cpuVersion": null,
+    "cpuMaxLanes": null,
+    "cpuConfigurations": []
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AVX-512",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [
+    "Execute Disable Bit"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 165,
     "ppt": 0,
@@ -41,14 +66,24 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2933 MT/s",
+      "eccModes": [],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i9 10900X",
     "manufacturer": "Intel",
-    "part_numbers": ["BX8069510900X"],
+    "part_numbers": [
+      "BX8069510900X"
+    ],
     "series": "Core i9 10000",
     "variant": "10900X",
     "releaseYear": 2019

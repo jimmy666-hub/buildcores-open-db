@@ -4,6 +4,9 @@
   "microarchitecture": "Kaby Lake",
   "coreFamily": "Kaby Lake-X",
   "socket": "LGA 2066",
+  "supportedChipsets": [
+    "Intel X299"
+  ],
   "cores": {
     "total": 4,
     "performance": 0,
@@ -25,6 +28,30 @@
     "l2": 1,
     "l3": 6
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 16,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "SSE4.1",
+    "SSE4.2",
+    "AVX2",
+    "AES-NI",
+    "64-bit"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d"
+  ],
+  "security": [],
+  "multisocket": false,
   "specifications": {
     "tdp": 112,
     "ppt": 0,
@@ -41,14 +68,27 @@
     "simultaneousMultithreading": false,
     "memory": {
       "maxSupport": 64,
-      "types": ["DDR4"],
-      "channels": 2
+      "types": [
+        "DDR4"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR4-2666",
+      "eccModes": [
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "ECC UDIMM",
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Core i5 7640X",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80677I57640X"],
+    "part_numbers": [
+      "BX80677I57640X"
+    ],
     "series": "Core i5 7000",
     "variant": "7640X",
     "releaseYear": 2017

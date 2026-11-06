@@ -4,6 +4,7 @@
   "microarchitecture": "Ivy Bridge EP",
   "coreFamily": "Ivy Bridge-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +26,35 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 51mm",
+  "tcaseMax": "75°C",
+  "instructionSets": [
+    "64-bit",
+    "AVX",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "AES-NI",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit",
+    "Secure Key"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 95,
     "ppt": 0,
@@ -41,14 +71,26 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR3"],
-      "channels": 4
+      "types": [
+        "DDR3"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2650 v2",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80635E52650V2"],
+    "part_numbers": [
+      "BX80635E52650V2"
+    ],
     "series": "Xeon E5 2600 v2",
     "variant": "2650 v2",
     "releaseYear": 2013

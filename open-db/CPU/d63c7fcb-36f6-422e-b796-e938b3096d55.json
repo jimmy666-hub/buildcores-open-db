@@ -4,6 +4,7 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell-EP",
   "socket": "LGA 2011",
+  "supportedChipsets": [],
   "cores": {
     "total": 16,
     "performance": 0,
@@ -25,6 +26,33 @@
     "l2": 4,
     "l3": 40
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 51mm",
+  "tcaseMax": "87.9°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "Secure Key",
+    "OS Guard",
+    "Trusted Execution Technology",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 135,
     "ppt": 0,
@@ -41,14 +69,28 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "2133 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM"
+      ],
+      "unsupported": [
+        "Non-ECC UDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2698 v3",
     "manufacturer": "Intel",
-    "part_numbers": ["CM8064401609800", "E5-2698 V3", "SR1XE"],
+    "part_numbers": [
+      "CM8064401609800",
+      "E5-2698 V3",
+      "SR1XE"
+    ],
     "series": "Xeon E5 2600 v3",
     "variant": "E5-2698 v3",
     "releaseYear": 2014

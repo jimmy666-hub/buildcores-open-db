@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 4",
   "coreFamily": "Raphael",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "X670E",
+    "X670",
+    "B650E",
+    "B650",
+    "X870E",
+    "X870",
+    "B840",
+    "B850"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +36,41 @@
     "l2": 8,
     "l3": 32
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AVX",
+    "AVX2",
+    "AVX512",
+    "FMA3",
+    "MMX-plus",
+    "SHA",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE4.1",
+    "SSE4.2",
+    "SSE4A",
+    "SSSE3",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V"
+  ],
+  "security": [
+    "AMD Secure Processor"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 105,
     "ppt": 142,
@@ -41,14 +87,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 128,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "DDR5-5200",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 7 7700X",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100000591WOF", "RYZEN 7 7700X", "100100000591WOF"],
+    "part_numbers": [
+      "100-100000591WOF",
+      "RYZEN 7 7700X",
+      "100100000591WOF"
+    ],
     "series": "Ryzen 7 7000",
     "variant": "7700X",
     "releaseYear": 2022

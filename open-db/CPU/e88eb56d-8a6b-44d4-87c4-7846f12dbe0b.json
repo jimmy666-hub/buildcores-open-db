@@ -4,6 +4,17 @@
   "microarchitecture": "Zen 5",
   "coreFamily": "Granite Ridge",
   "socket": "AM5",
+  "supportedChipsets": [
+    "A620",
+    "X670E",
+    "X670",
+    "B650E",
+    "B650",
+    "X870E",
+    "X870",
+    "B840",
+    "B850"
+  ],
   "cores": {
     "total": 16,
     "performance": 0,
@@ -25,6 +36,55 @@
     "l2": 16,
     "l3": 192
   },
+  "pcie": {
+    "cpuVersion": "5.0",
+    "cpuMaxLanes": 28,
+    "cpuConfigurations": [
+      "1x16",
+      "2x8",
+      "1x8+2x4"
+    ]
+  },
+  "packageSize": null,
+  "tcaseMax": null,
+  "instructionSets": [
+    "AES",
+    "AVX512",
+    "AVX2",
+    "AVX",
+    "FMA3",
+    "MMX-plus",
+    "SSE2",
+    "SSE4.2",
+    "SSE4A",
+    "SSE4.1",
+    "SSE3",
+    "SSSE3",
+    "SSE",
+    "x86-64"
+  ],
+  "virtualization": [
+    "AMD-V (SVM)",
+    "AMD-Vi",
+    "AMD AVIC",
+    "SLAT"
+  ],
+  "security": [
+    "AMD Secure Processor",
+    "AMD Platform Secure Boot",
+    "Windows Secure Boot",
+    "UEFI Secure Boot",
+    "Windows Device Guard",
+    "SMEP",
+    "GMET",
+    "VBS",
+    "Windows Secured-Core PC",
+    "Firmware TPM",
+    "AES-NI",
+    "NX bit",
+    "AMD Shadow Stack"
+  ],
+  "multisocket": false,
   "specifications": {
     "tdp": 200,
     "ppt": 270,
@@ -41,14 +101,29 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 256,
-      "types": ["DDR5"],
-      "channels": 2
+      "types": [
+        "DDR5"
+      ],
+      "channels": 2,
+      "maxSpeed": "5600 MT/s",
+      "eccModes": [
+        "ECC UDIMM",
+        "Non-ECC UDIMM"
+      ],
+      "unsupported": [
+        "RDIMM",
+        "LRDIMM"
+      ]
     }
   },
   "metadata": {
     "name": "AMD Ryzen 9 9950X3D2",
     "manufacturer": "AMD",
-    "part_numbers": ["100-100001978WOF", "100-000001978", "AMD Ryzen 9 9950X3D2 Dual Edition"],
+    "part_numbers": [
+      "100-100001978WOF",
+      "100-000001978",
+      "AMD Ryzen 9 9950X3D2 Dual Edition"
+    ],
     "series": "Ryzen 9 9000",
     "variant": "9950X3D2",
     "releaseYear": 2026,

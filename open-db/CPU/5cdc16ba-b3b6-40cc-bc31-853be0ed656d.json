@@ -4,6 +4,10 @@
   "microarchitecture": "Haswell",
   "coreFamily": "Haswell-EP",
   "socket": "LGA 2011-3",
+  "supportedChipsets": [
+    "X99",
+    "C612"
+  ],
   "cores": {
     "total": 8,
     "performance": 0,
@@ -25,6 +29,34 @@
     "l2": 2,
     "l3": 20
   },
+  "pcie": {
+    "cpuVersion": "3.0",
+    "cpuMaxLanes": 40,
+    "cpuConfigurations": [
+      "x4",
+      "x8",
+      "x16"
+    ]
+  },
+  "packageSize": "52.5mm x 45mm",
+  "tcaseMax": "74.3°C",
+  "instructionSets": [
+    "AVX2",
+    "AES-NI"
+  ],
+  "virtualization": [
+    "VT-x",
+    "VT-d",
+    "EPT"
+  ],
+  "security": [
+    "TXT",
+    "AES-NI",
+    "Secure Key",
+    "OS Guard",
+    "Execute Disable Bit"
+  ],
+  "multisocket": true,
   "specifications": {
     "tdp": 90,
     "ppt": 0,
@@ -41,14 +73,27 @@
     "simultaneousMultithreading": true,
     "memory": {
       "maxSupport": 768,
-      "types": ["DDR4"],
-      "channels": 4
+      "types": [
+        "DDR4"
+      ],
+      "channels": 4,
+      "maxSpeed": "1866 MT/s",
+      "eccModes": [
+        "ECC RDIMM",
+        "ECC LRDIMM",
+        "ECC UDIMM"
+      ],
+      "unsupported": []
     }
   },
   "metadata": {
     "name": "Intel Xeon E5-2640 v3",
     "manufacturer": "Intel",
-    "part_numbers": ["BX80644E52640V3", "E5-2640 v3", "SR205"],
+    "part_numbers": [
+      "BX80644E52640V3",
+      "E5-2640 v3",
+      "SR205"
+    ],
     "series": "Xeon E5 2600 v3",
     "variant": "E5-2640 v3",
     "releaseYear": 2014
